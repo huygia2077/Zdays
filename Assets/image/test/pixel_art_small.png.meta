@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: d2ab243c7ab0e424eb0058080e7fb8df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7154315292693043652
+    second: pixel_art_small_0
+  - first:
+      213: -1587676644818350334
+    second: pixel_art_small_1
+  - first:
+      213: 699610623824601718
+    second: pixel_art_small_2
+  - first:
+      213: -1320107872473090307
+    second: pixel_art_small_3
+  - first:
+      213: 5792435894526877087
+    second: pixel_art_small_4
+  - first:
+      213: -339639709076005869
+    second: pixel_art_small_5
+  - first:
+      213: -7459709051655706655
+    second: pixel_art_small_6
+  - first:
+      213: 7555010885717278357
+    second: pixel_art_small_7
+  - first:
+      213: -5260958395881477576
+    second: pixel_art_small_8
+  - first:
+      213: -1100690115969351679
+    second: pixel_art_small_9
+  - first:
+      213: 5527557686102695191
+    second: pixel_art_small_10
+  - first:
+      213: -7368288354694668974
+    second: pixel_art_small_11
+  - first:
+      213: 1682994273827674516
+    second: pixel_art_small_12
+  - first:
+      213: -2605604286571174669
+    second: pixel_art_small_13
+  - first:
+      213: 4589174131244354226
+    second: pixel_art_small_14
+  - first:
+      213: 2523508101012299644
+    second: pixel_art_small_15
+  - first:
+      213: 8053352384677553184
+    second: pixel_art_small_16
+  - first:
+      213: -6679492031827205231
+    second: pixel_art_small_17
+  - first:
+      213: -1198127468534670957
+    second: pixel_art_small_18
+  - first:
+      213: 9188475446894365085
+    second: pixel_art_small_19
+  - first:
+      213: 8397571868737769996
+    second: pixel_art_small_20
+  - first:
+      213: -914387740712039729
+    second: pixel_art_small_21
+  - first:
+      213: -310373391171730867
+    second: pixel_art_small_22
+  - first:
+      213: -3340553643951288762
+    second: pixel_art_small_23
+  - first:
+      213: -8860395295949362865
+    second: pixel_art_small_24
+  - first:
+      213: -6184199215041475751
+    second: pixel_art_small_25
+  - first:
+      213: -6646380466783560034
+    second: pixel_art_small_26
+  - first:
+      213: -3076289031158242224
+    second: pixel_art_small_27
+  - first:
+      213: -3003583065271854999
+    second: pixel_art_small_28
+  - first:
+      213: 5043096651140085775
+    second: pixel_art_small_29
+  - first:
+      213: -9212523350316297219
+    second: pixel_art_small_30
+  - first:
+      213: -7676138533052113990
+    second: pixel_art_small_31
+  - first:
+      213: -749114239967648553
+    second: pixel_art_small_32
+  - first:
+      213: 1765707326254746698
+    second: pixel_art_small_33
+  - first:
+      213: 6538168509711386547
+    second: pixel_art_small_34
+  - first:
+      213: 8498735341585096340
+    second: pixel_art_small_35
+  - first:
+      213: -6293075850241881551
+    second: pixel_art_small_36
+  - first:
+      213: -8648565828703791137
+    second: pixel_art_small_37
+  - first:
+      213: 938609212468158662
+    second: pixel_art_small_38
+  - first:
+      213: 118260022351930015
+    second: pixel_art_small_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixel_art_small_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 47
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c91d108adb394360800000000000000
+      internalID: 7154315292693043652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 47
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f0b6fd08077f9e0800000000000000
+      internalID: -1587676644818350334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 47
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672a72ad72485b900800000000000000
+      internalID: 699610623824601718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 47
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df67b0c52e80eade0800000000000000
+      internalID: -1320107872473090307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 47
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d1f75a1cdd26050800000000000000
+      internalID: 5792435894526877087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 47
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c58eceb7b594bf0800000000000000
+      internalID: -339639709076005869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_6
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 47
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7ab48042ac97890800000000000000
+      internalID: -7459709051655706655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 47
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e33655f5ac8d860800000000000000
+      internalID: 7555010885717278357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 47
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a206376325df6b0800000000000000
+      internalID: -5260958395881477576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 47
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1000dd5db2099b0f0800000000000000
+      internalID: -1100690115969351679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 33
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d91a3ed64d5bc40800000000000000
+      internalID: 5527557686102695191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 33
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dd6cfb7c49eb990800000000000000
+      internalID: -7368288354694668974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 33
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499d38a00623b5710800000000000000
+      internalID: 1682994273827674516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 33
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4a0b9d4b807dbd0800000000000000
+      internalID: -2605604286571174669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 33
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba4b31de8500bf30800000000000000
+      internalID: 4589174131244354226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_15
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 33
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f98ac6f3d450320800000000000000
+      internalID: 2523508101012299644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_16
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 33
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02420cb435143cf60800000000000000
+      internalID: 8053352384677553184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_17
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 33
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19323e2f26dad43a0800000000000000
+      internalID: -6679492031827205231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_18
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 33
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3995a525a656f5fe0800000000000000
+      internalID: -1198127468534670957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_19
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 33
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99898f7cb5048f70800000000000000
+      internalID: 9188475446894365085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c029de35f1b2a8470800000000000000
+      internalID: 8397571868737769996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 16
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca03e7c1317f43f0800000000000000
+      internalID: -914387740712039729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 16
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42c97f8b0551bbf0800000000000000
+      internalID: -310373391171730867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 16
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e852be828f3a1d0800000000000000
+      internalID: -3340553643951288762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_24
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 16
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4965673c6d890580800000000000000
+      internalID: -8860395295949362865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_25
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 16
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b0437449f4d2aa0800000000000000
+      internalID: -6184199215041475751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_26
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 16
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e5543fd2053c3a0800000000000000
+      internalID: -6646380466783560034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_27
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 16
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054e16fcc63de45d0800000000000000
+      internalID: -3076289031158242224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_28
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 16
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9689715ad112156d0800000000000000
+      internalID: -3003583065271854999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_29
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 16
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08ba2b4fadacf540800000000000000
+      internalID: 5043096651140085775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3d76ba2da862080800000000000000
+      internalID: -9212523350316297219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb9db29ca0e87590800000000000000
+      internalID: -7676138533052113990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 2
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4aa86519c9a95f0800000000000000
+      internalID: -749114239967648553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_33
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c08b6457d018810800000000000000
+      internalID: 1765707326254746698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_34
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b70efe6e9d3cba50800000000000000
+      internalID: 6538168509711386547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_35
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49edc33d3c291f570800000000000000
+      internalID: 8498735341585096340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_36
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a4eb93bd08aa8a0800000000000000
+      internalID: -6293075850241881551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_37
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7578b633f1af780800000000000000
+      internalID: -8648565828703791137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_38
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 2
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0e2141b1c960d00800000000000000
+      internalID: 938609212468158662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_small_39
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 2
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92aa6f1dd424a100800000000000000
+      internalID: 118260022351930015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixel_art_small_0: 7154315292693043652
+      pixel_art_small_1: -1587676644818350334
+      pixel_art_small_10: 5527557686102695191
+      pixel_art_small_11: -7368288354694668974
+      pixel_art_small_12: 1682994273827674516
+      pixel_art_small_13: -2605604286571174669
+      pixel_art_small_14: 4589174131244354226
+      pixel_art_small_15: 2523508101012299644
+      pixel_art_small_16: 8053352384677553184
+      pixel_art_small_17: -6679492031827205231
+      pixel_art_small_18: -1198127468534670957
+      pixel_art_small_19: 9188475446894365085
+      pixel_art_small_2: 699610623824601718
+      pixel_art_small_20: 8397571868737769996
+      pixel_art_small_21: -914387740712039729
+      pixel_art_small_22: -310373391171730867
+      pixel_art_small_23: -3340553643951288762
+      pixel_art_small_24: -8860395295949362865
+      pixel_art_small_25: -6184199215041475751
+      pixel_art_small_26: -6646380466783560034
+      pixel_art_small_27: -3076289031158242224
+      pixel_art_small_28: -3003583065271854999
+      pixel_art_small_29: 5043096651140085775
+      pixel_art_small_3: -1320107872473090307
+      pixel_art_small_30: -9212523350316297219
+      pixel_art_small_31: -7676138533052113990
+      pixel_art_small_32: -749114239967648553
+      pixel_art_small_33: 1765707326254746698
+      pixel_art_small_34: 6538168509711386547
+      pixel_art_small_35: 8498735341585096340
+      pixel_art_small_36: -6293075850241881551
+      pixel_art_small_37: -8648565828703791137
+      pixel_art_small_38: 938609212468158662
+      pixel_art_small_39: 118260022351930015
+      pixel_art_small_4: 5792435894526877087
+      pixel_art_small_5: -339639709076005869
+      pixel_art_small_6: -7459709051655706655
+      pixel_art_small_7: 7555010885717278357
+      pixel_art_small_8: -5260958395881477576
+      pixel_art_small_9: -1100690115969351679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

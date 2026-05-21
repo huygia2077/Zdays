@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 6e02106ba51b2f7449c595a9e0da51dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7543983318260261533
+    second: feet_run_horizontal_0
+  - first:
+      213: -4086112164809899500
+    second: feet_run_horizontal_1
+  - first:
+      213: -2175900402760460066
+    second: feet_run_horizontal_2
+  - first:
+      213: 8750874352411638652
+    second: feet_run_horizontal_3
+  - first:
+      213: -6109245681983721491
+    second: feet_run_horizontal_4
+  - first:
+      213: -4794488411575935608
+    second: feet_run_horizontal_5
+  - first:
+      213: 12549061190305656
+    second: feet_run_horizontal_6
+  - first:
+      213: 2029457056867587910
+    second: feet_run_horizontal_7
+  - first:
+      213: 4736858755426399244
+    second: feet_run_horizontal_8
+  - first:
+      213: 5192333404125398980
+    second: feet_run_horizontal_9
+  - first:
+      213: 8246737082620655872
+    second: feet_run_horizontal_10
+  - first:
+      213: 1817089819351393886
+    second: feet_run_horizontal_11
+  - first:
+      213: 1999233417299071655
+    second: feet_run_horizontal_12
+  - first:
+      213: 6319764847259969691
+    second: feet_run_horizontal_13
+  - first:
+      213: -2144616729588448435
+    second: feet_run_horizontal_14
+  - first:
+      213: -154446901935721926
+    second: feet_run_horizontal_15
+  - first:
+      213: -5221360683214401278
+    second: feet_run_horizontal_16
+  - first:
+      213: 6446885725087784023
+    second: feet_run_horizontal_17
+  - first:
+      213: -1334770459139015232
+    second: feet_run_horizontal_18
+  - first:
+      213: 5125098300011325132
+    second: feet_run_horizontal_19
+  - first:
+      213: 5832642820315040428
+    second: feet_run_horizontal_20
+  - first:
+      213: -7400126779034759480
+    second: feet_run_horizontal_21
+  - first:
+      213: -3666111490897957853
+    second: feet_run_horizontal_22
+  - first:
+      213: -7105098145501766690
+    second: feet_run_horizontal_23
+  - first:
+      213: 1468898564278754014
+    second: feet_run_horizontal_24
+  - first:
+      213: 3464115746931517641
+    second: feet_run_horizontal_25
+  - first:
+      213: 2623145552898451597
+    second: feet_run_horizontal_26
+  - first:
+      213: -5775261147931492194
+    second: feet_run_horizontal_27
+  - first:
+      213: -3618526312115224095
+    second: feet_run_horizontal_28
+  - first:
+      213: -1715051436819339833
+    second: feet_run_horizontal_29
+  - first:
+      213: -1794105450235317906
+    second: feet_run_horizontal_30
+  - first:
+      213: -4751357057770412379
+    second: feet_run_horizontal_31
+  - first:
+      213: 8789920239825858470
+    second: feet_run_horizontal_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: feet_run_horizontal_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1156
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ddf9b44236e4790800000000000000
+      internalID: -7543983318260261533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1155
+        width: 88
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4128a10a2a63b47c0800000000000000
+      internalID: -4086112164809899500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1153
+        width: 88
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed855d2bc16adc1e0800000000000000
+      internalID: -2175900402760460066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1069
+        width: 88
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b72910cd9517970800000000000000
+      internalID: 8750874352411638652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1071
+        width: 88
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def65cf9b69973ba0800000000000000
+      internalID: -6109245681983721491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1075
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d1a44213e867db0800000000000000
+      internalID: -4794488411575935608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 975
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877438efd459c2000800000000000000
+      internalID: 12549061190305656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 972
+        width: 88
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6479081d0741a2c10800000000000000
+      internalID: 2029457056867587910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_8
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 968
+        width: 88
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04b36ce0f3bcb140800000000000000
+      internalID: 4736858755426399244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 903
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c70a4c88bfde0840800000000000000
+      internalID: 5192333404125398980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 909
+        width: 88
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00935adfeab427270800000000000000
+      internalID: 8246737082620655872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_11
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 914
+        width: 88
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e562b673099973910800000000000000
+      internalID: 1817089819351393886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 744
+        width: 88
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2933d5334bebb10800000000000000
+      internalID: 1999233417299071655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 789
+        width: 88
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b986ee025a054b750800000000000000
+      internalID: 6319764847259969691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 749
+        width: 131
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d434585727acc32e0800000000000000
+      internalID: -2144616729588448435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_15
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 751
+        width: 131
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3236796c5b4bddf0800000000000000
+      internalID: -154446901935721926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_16
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 578
+        width: 131
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20190d06f100a87b0800000000000000
+      internalID: -5221360683214401278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_17
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 579
+        width: 131
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cd46fe860f77950800000000000000
+      internalID: 6446885725087784023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_18
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 578
+        width: 131
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd755ed651f97de0800000000000000
+      internalID: -1334770459139015232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_19
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 399
+        width: 131
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6222bffb1002740800000000000000
+      internalID: 5125098300011325132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 397
+        width: 131
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa4c9e0eb5b1f050800000000000000
+      internalID: 5832642820315040428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_21
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 392
+        width: 88
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce07cae6e77d4990800000000000000
+      internalID: -7400126779034759480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_22
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 437
+        width: 88
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cac0ed50b5f1dc0800000000000000
+      internalID: -3666111490897957853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_23
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 264
+        width: 88
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb941f81ee956d90800000000000000
+      internalID: -7105098145501766690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_24
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 268
+        width: 88
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda9aee2673926410800000000000000
+      internalID: 1468898564278754014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_25
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 271
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8a0bc0be2031030800000000000000
+      internalID: 3464115746931517641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_26
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 210
+        width: 88
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8868aa7bf8476420800000000000000
+      internalID: 2623145552898451597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_27
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 205
+        width: 88
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90cd68a5962adfa0800000000000000
+      internalID: -5775261147931492194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 199
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1c7fbad7968cdc0800000000000000
+      internalID: -3618526312115224095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 97
+        width: 88
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c52cd01ec9e238e0800000000000000
+      internalID: -1715051436819339833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 99
+        width: 88
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61b12d399e0a17e0800000000000000
+      internalID: -1794105450235317906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_31
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 19
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6ac820ee9cf0eb0800000000000000
+      internalID: -4751357057770412379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: feet_run_horizontal_32
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 15
+        width: 88
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af26da13e11cf970800000000000000
+      internalID: 8789920239825858470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      feet_run_horizontal_0: -7543983318260261533
+      feet_run_horizontal_1: -4086112164809899500
+      feet_run_horizontal_10: 8246737082620655872
+      feet_run_horizontal_11: 1817089819351393886
+      feet_run_horizontal_12: 1999233417299071655
+      feet_run_horizontal_13: 6319764847259969691
+      feet_run_horizontal_14: -2144616729588448435
+      feet_run_horizontal_15: -154446901935721926
+      feet_run_horizontal_16: -5221360683214401278
+      feet_run_horizontal_17: 6446885725087784023
+      feet_run_horizontal_18: -1334770459139015232
+      feet_run_horizontal_19: 5125098300011325132
+      feet_run_horizontal_2: -2175900402760460066
+      feet_run_horizontal_20: 5832642820315040428
+      feet_run_horizontal_21: -7400126779034759480
+      feet_run_horizontal_22: -3666111490897957853
+      feet_run_horizontal_23: -7105098145501766690
+      feet_run_horizontal_24: 1468898564278754014
+      feet_run_horizontal_25: 3464115746931517641
+      feet_run_horizontal_26: 2623145552898451597
+      feet_run_horizontal_27: -5775261147931492194
+      feet_run_horizontal_28: -3618526312115224095
+      feet_run_horizontal_29: -1715051436819339833
+      feet_run_horizontal_3: 8750874352411638652
+      feet_run_horizontal_30: -1794105450235317906
+      feet_run_horizontal_31: -4751357057770412379
+      feet_run_horizontal_32: 8789920239825858470
+      feet_run_horizontal_4: -6109245681983721491
+      feet_run_horizontal_5: -4794488411575935608
+      feet_run_horizontal_6: 12549061190305656
+      feet_run_horizontal_7: 2029457056867587910
+      feet_run_horizontal_8: 4736858755426399244
+      feet_run_horizontal_9: 5192333404125398980
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

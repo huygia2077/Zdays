@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c21c7b5c21e5e74cac253fd907ed765, type: 3}
+  m_Name: rightArm
+  m_EditorClassIdentifier: Assembly-CSharp::deadLimbs
+  limbsSprite: {fileID: 6909055701201513969, guid: 949104781b0a71d45a68e29f53840737, type: 3}
+  scale: 0.165
