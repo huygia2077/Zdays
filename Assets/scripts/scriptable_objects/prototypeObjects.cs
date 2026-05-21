@@ -4,16 +4,19 @@ using UnityEngine.InputSystem;
 public class prototypeObjects : MonoBehaviour
 {
     [SerializeField] public Camera cam;
+    [SerializeField] public PlayerInput playerInput;
     [SerializeField] public SpriteRenderer sprite;
     [SerializeField] public Color placeableColor;
     [SerializeField] public Color unplaceableColor;
     [SerializeField] public GameObject placedObject;
+
     private int collisionCount = 0;
     void Start()
     {
         BoxCollider2D bc =transform.AddComponent<BoxCollider2D>();
         bc.isTrigger = true;
         cam = Camera.main;
+        playerInput = GameObject.Find("Player").GetComponent<PlayerInput>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -41,6 +44,8 @@ public class prototypeObjects : MonoBehaviour
             Instantiate(placedObject, transform.position, Quaternion.identity);
         }
     }
+
+    // public void onRo
 
     void Update()
     {
