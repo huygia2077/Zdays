@@ -43,19 +43,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RotatePrototypeLeft",
+                    "name": "RotatePrototype",
                     "type": "Value",
-                    "id": "d68d1992-8e03-4c48-89cb-f572867bc3fe",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "RotatePrototypeRight",
-                    "type": "Value",
-                    "id": "45f75018-f00c-4a0a-a972-65b3c82bc266",
-                    "expectedControlType": "Vector2",
+                    "id": "a22724e1-c168-434e-901a-43f8cfb504fd",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -239,24 +230,46 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "cd2f83fc-d851-4302-b6e8-94eb0a40b7e6",
-                    "path": "<Keyboard>/q",
+                    "name": "1D Axis",
+                    "id": "b8532fd4-9b3d-49ef-8ec1-a1fe9384c860",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "RotatePrototypeLeft",
-                    "isComposite": false,
+                    "groups": "",
+                    "action": "RotatePrototype",
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "30b8af0a-8539-4496-8206-45b8a6a5d6c8",
+                    "name": "negative",
+                    "id": "fbfff6c9-82bf-4846-aca6-052e3614685d",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotatePrototype",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c81ecb02-4559-4020-b1e7-f450a0335286",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "RotatePrototypeRight",
+                    "groups": "",
+                    "action": "RotatePrototype",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "776fe318-f3d0-4508-828d-ee820819828e",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotatePrototype",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
