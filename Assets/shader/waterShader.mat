@@ -48,13 +48,15 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _intensity: 7
-    - _size: 3
-    - _speed: 0.5
+    - _intensity: 10
+    - _pixelDensity: 25
+    - _size: 4.5
+    - _speed: 1.5
     m_Colors:
-    - _baseColor: {r: 0.081167646, g: 0.30188674, b: 0.27882656, a: 0}
-    - _flowSpeed: {r: 0.05, g: 0, b: 0, a: 0}
-    - _highlighColor: {r: 0.14658241, g: 0.509434, b: 0.4633576, a: 0}
+    - White: {r: 1, g: 1, b: 1, a: 1}
+    - _baseColor: {r: 0.05268779, g: 0.3018868, b: 0.27623394, a: 1}
+    - _flowSpeed: {r: 0.1, g: 0, b: 0, a: 0}
+    - _highlighColor: {r: 0.14509797, g: 0.46676093, b: 0.5098038, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &438111479290357827
