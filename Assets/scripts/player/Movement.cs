@@ -7,7 +7,6 @@ public class Movement : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] public Transform tf;
-    [SerializeField] public PlayerInput playerInput;
     [SerializeField] public Camera cam;
 
 
@@ -24,7 +23,7 @@ public class Movement : MonoBehaviour
         mousePosition = context.ReadValue<Vector2>();
     }
 
-    public void FixedUpdate()
+    public void Update()
     {
         rb.linearVelocity = movementDirection * speed ;
 

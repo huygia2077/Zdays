@@ -4,11 +4,12 @@ using UnityEngine.InputSystem;
 public class prototypeObjects : MonoBehaviour
 {
     [SerializeField] public Camera cam;
-    [SerializeField] public PlayerInput playerInput;
     [SerializeField] public SpriteRenderer sprite;
     [SerializeField] public Color placeableColor;
     [SerializeField] public Color unplaceableColor;
     [SerializeField] public GameObject placedObject;
+    [SerializeField] public float rotateSpeed;
+    private float inputDirection;
 
     private int collisionCount = 0;
     void Start()
@@ -16,7 +17,6 @@ public class prototypeObjects : MonoBehaviour
         BoxCollider2D bc =transform.AddComponent<BoxCollider2D>();
         bc.isTrigger = true;
         cam = Camera.main;
-        playerInput = GameObject.Find("Player").GetComponent<PlayerInput>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -41,11 +41,25 @@ public class prototypeObjects : MonoBehaviour
     {
         if (!(collisionCount > 0))
         {
-            Instantiate(placedObject, transform.position, Quaternion.identity);
+            Instantiate(placedObject, transform.position, transform.rotation);
         }
     }
 
-    // public void onRo
+    public void OnRotatePrototype(InputAction.CallbackContext context)
+    {
+        inputDirection = context.ReadValue<float>();
+    }
+
+    void rotationUpdate()
+    {
+        if (inputDirection != 0)
+        {
+            float direction = Mathf.Sign(inputDirection);
+            float rotationAmount = direction * rotateSpeed * Time.deltaTime;
+            transform.Rotate(Vector3.forward * rotationAmount);
+            
+        }
+    }
 
     void Update()
     {
@@ -63,5 +77,6 @@ public class prototypeObjects : MonoBehaviour
             sprite.color = placeableColor;
         }
 
+        rotationUpdate();
     }
 }
