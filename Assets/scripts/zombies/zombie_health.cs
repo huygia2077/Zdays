@@ -3,9 +3,16 @@ using UnityEngine;
 public class zombie_health : MonoBehaviour
 {
     [SerializeField] public float HP;
+    [SerializeField] public int zPoints;
     [SerializeField] public zombie_dead_effet effect;
     [SerializeField] public GameObject damaged_blood;
+    [SerializeField] public zPointsManager pointsManager;
 
+
+    void Start()
+    {
+        pointsManager = GameObject.Find("killCount").GetComponent<zPointsManager>();
+    }
     public void getDamage()
     {
         HP -= 1;
@@ -20,6 +27,7 @@ public class zombie_health : MonoBehaviour
         if (HP <= 0)
         {
             effect.play_dead_effect();
+            pointsManager.addPoints(zPoints);
             Destroy(gameObject);
         }
     }

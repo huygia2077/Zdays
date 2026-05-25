@@ -293,8 +293,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_health
   HP: 5
+  zPoints: 2
   effect: {fileID: 6955351085398593473}
   damaged_blood: {fileID: 5586444575461195305, guid: f63b17445c6d27e4087b043c5273382c, type: 3}
+  points: {fileID: 0}
 --- !u!114 &-309475249483442624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a27fde67429534a83c6ceb5818d111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_attack
+  attack_range: {fileID: 0}
 --- !u!1 &5199796598306033947
 GameObject:
   m_ObjectHideFlags: 0

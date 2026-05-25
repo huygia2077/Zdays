@@ -133,3 +133,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_limbs
   sprite: {fileID: 6343582088824030748}
+  lifetime: {x: 0.01, y: 0.4}
