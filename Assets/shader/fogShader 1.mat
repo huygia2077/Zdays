@@ -54,10 +54,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _den: 5
     - _fogSize: 1
+    - _pixelDensity: 12
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
-    - _fogColor: {r: 0.45081186, g: 0.6320754, b: 0.43231553, a: 0.4117647}
-    - _fogSpeed: {r: 2, g: 0, b: 0, a: 0}
+    - _fogColor: {r: 0.45081186, g: 0.6320754, b: 0.43231547, a: 0.5882353}
+    - _fogSpeed: {r: 2.5, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

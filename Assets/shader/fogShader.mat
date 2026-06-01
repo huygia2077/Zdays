@@ -54,7 +54,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _den: 5
     - _fogSize: 8
+    - _pixelDensity: 13
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _fogColor: {r: 0.59267795, g: 0.7830188, b: 0.5724902, a: 0.15686275}
