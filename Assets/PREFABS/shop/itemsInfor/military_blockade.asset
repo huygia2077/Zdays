@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: 8765007211635695963, guid: 47b1ec2c6164d3f48a917f9b65376f5c, type: 3}
   scale: 0.17
+  objectScalingSize: 0
   cost: 50
+  type: object
   itemName: Military blockade
   discription: A military grade blockade can be resilient due to its great durability
+  objectPrefab: {fileID: 8954606759074593157, guid: 3f45d2fdfeaaf964a962699a5ef0d421, type: 3}

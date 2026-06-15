@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: -4956624550986428714, guid: 3f3f8ba236ddba648b7015c6ec607eaf, type: 3}
   scale: 0.1
+  objectScalingSize: 0
   cost: 5
+  type: object
   itemName: wooden barrier
   discription: A cheap solution with the only downside is its weak durability
+  objectPrefab: {fileID: 8498542110463638791, guid: c441f97ea0eab9e47b178bc093dc1f21, type: 3}

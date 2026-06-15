@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class item : MonoBehaviour
 {
     [SerializeField] public itemInformation itemInfo;
+    [SerializeField] public shop_manager shopManager;
+    [SerializeField] public prototype_manager prototypeManager;
 
     void Start()
     {
@@ -21,10 +23,20 @@ public class item : MonoBehaviour
 
         // Add event listener to button click when buying an item
         gameObject.GetComponent<Button>().onClick.AddListener(onBuy);
+
+        // Get shop mananger to work with animtion after buying an item
+        shopManager = GameObject.Find("shop").GetComponent<shop_manager>();
+
+        // Get prototype manager
+        prototypeManager = GameObject.Find("prototypeManager").GetComponent<prototype_manager>();
     }
 
     public void onBuy()
     {
-        Debug.Log("Buying " + itemInfo.itemName);
+        if (itemInfo.type == "object")
+        {
+            shopManager.closeShop();
+            prototypeManager.enablePrototype();
+        }
     }
 }

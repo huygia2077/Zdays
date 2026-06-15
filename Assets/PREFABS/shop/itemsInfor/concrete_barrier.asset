@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: 617952202591393388, guid: 53518ded04de22748961dea29007f54c, type: 3}
   scale: 0.3
+  objectScalingSize: 0
   cost: 20
+  type: object
   itemName: Concrete barrier
   discription: A barrier made of a concrete can fostify your base from the zombies
+  objectPrefab: {fileID: 3425940596395242680, guid: 275e6c2c04388b14194afbcb3b074a00, type: 3}

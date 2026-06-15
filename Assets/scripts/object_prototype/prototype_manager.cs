@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class prototype_manager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    [SerializeField] public GameObject prototypePrefab;
+    public void enablePrototype() 
+    {   
+        GameObject prototype = Instantiate(prototypePrefab, transform.position, Quaternion.identity);
+        prototype.name = "prototypeObject";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void disablePrototype()
     {
-        
+        GameObject prototype = GameObject.Find("prototypeObject");
+        if (prototype)
+        {
+            prototype.GetComponent<prototypeObjects>().onDisabled();        
+        }
     }
 }

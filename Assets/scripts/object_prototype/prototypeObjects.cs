@@ -9,14 +9,18 @@ public class prototypeObjects : MonoBehaviour
     [SerializeField] public Color unplaceableColor;
     [SerializeField] public GameObject placedObject;
     [SerializeField] public float rotateSpeed;
+    [SerializeField] private PlayerInput playerInput;
     private float inputDirection;
 
     private int collisionCount = 0;
     void Start()
     {
+        cam = Camera.main;
+        sprite = gameObject.GetComponent<SpriteRenderer>();
+        playerInput = GameObject.Find("Player").GetComponent<PlayerInput>();
+        playerInput.actions["Place"].performed += onPlace;
         BoxCollider2D bc =transform.AddComponent<BoxCollider2D>();
         bc.isTrigger = true;
-        cam = Camera.main;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -37,7 +41,7 @@ public class prototypeObjects : MonoBehaviour
         }
     }
 
-    public void OnPlace()
+    void onPlace(InputAction.CallbackContext context)
     {
         if (!(collisionCount > 0))
         {
@@ -45,19 +49,14 @@ public class prototypeObjects : MonoBehaviour
         }
     }
 
-    public void OnRotatePrototype(InputAction.CallbackContext context)
-    {
-        inputDirection = context.ReadValue<float>();
-    }
-
     void rotationUpdate()
     {
+        inputDirection = playerInput.actions["RotatePrototype"].ReadValue<float>();
         if (inputDirection != 0)
         {
             float direction = Mathf.Sign(inputDirection);
             float rotationAmount = direction * rotateSpeed * Time.deltaTime;
             transform.Rotate(Vector3.forward * rotationAmount);
-            
         }
     }
 
@@ -78,5 +77,11 @@ public class prototypeObjects : MonoBehaviour
         }
 
         rotationUpdate();
+    }
+
+    public void onDisabled()
+    {
+        playerInput.actions["Place"].performed -= onPlace;
+        Destroy(gameObject);
     }
 }
