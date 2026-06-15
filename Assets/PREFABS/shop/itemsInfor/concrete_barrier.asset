@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d97022b8017813649982e81b16b73471, type: 3}
-  m_Name: barwire
+  m_Name: concrete_barrier
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
-  sprite: {fileID: -8447693755266998078, guid: 3b0a1c6e2e520d04caebbb5dc073ffd4, type: 3}
+  sprite: {fileID: 617952202591393388, guid: 53518ded04de22748961dea29007f54c, type: 3}
   scale: 0.3
-  cost: 10
-  itemName: Barwire
-  discription: A barwire can be a great obstacle for zombies, but they are weak
+  cost: 20
+  itemName: Concrete barrier
+  discription: A barrier made of a concrete can fostify your base from the zombies

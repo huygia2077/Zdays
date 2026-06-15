@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d97022b8017813649982e81b16b73471, type: 3}
-  m_Name: barwire
+  m_Name: wooden_barrier
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
-  sprite: {fileID: -8447693755266998078, guid: 3b0a1c6e2e520d04caebbb5dc073ffd4, type: 3}
-  scale: 0.3
-  cost: 10
-  itemName: Barwire
-  discription: A barwire can be a great obstacle for zombies, but they are weak
+  sprite: {fileID: -4956624550986428714, guid: 3f3f8ba236ddba648b7015c6ec607eaf, type: 3}
+  scale: 0.1
+  cost: 5
+  itemName: wooden barrier
+  discription: A cheap solution with the only downside is its weak durability

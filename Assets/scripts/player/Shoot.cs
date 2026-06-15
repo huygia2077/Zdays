@@ -14,17 +14,19 @@ public class Shoot : MonoBehaviour
     [SerializeField] public Light2D gunFire;
     [SerializeField] public float fireRate;
     [SerializeField] public bool canShoot = true;
+    private controlManager controlManager;
 
 
     void Start()
     {
+        controlManager = gameObject.GetComponent<controlManager>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
         gunFire.enabled = false;
     }
 
     public void OnShoot()
     {
-        if (canShoot)
+        if (canShoot && controlManager.controlable)
         {
             cameraShakeManager.instance.cameraShake(impulseSource);
             GameObject bullets = Instantiate(bullet, gunPoint.position, Quaternion.identity);

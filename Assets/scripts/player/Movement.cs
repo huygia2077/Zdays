@@ -8,10 +8,16 @@ public class Movement : MonoBehaviour
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] public Transform tf;
     [SerializeField] public Camera cam;
+    private controlManager controlManager;
 
 
     private Vector2 movementDirection;
     private Vector2 mousePosition;
+
+    void Start()
+    {
+        controlManager = gameObject.GetComponent<controlManager>();
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -25,12 +31,15 @@ public class Movement : MonoBehaviour
 
     public void Update()
     {
-        rb.linearVelocity = movementDirection * speed ;
+        if (controlManager.controlable)
+        {
+            rb.linearVelocity = movementDirection * speed ;
 
-        Vector3 worldPos = cam.ScreenToWorldPoint(mousePosition);
-        Vector2 lookDirection = worldPos - tf.position;
+            Vector3 worldPos = cam.ScreenToWorldPoint(mousePosition);
+            Vector2 lookDirection = worldPos - tf.position;
 
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
-        tf.rotation = Quaternion.Euler(0, 0, angle);
+            float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+            tf.rotation = Quaternion.Euler(0, 0, angle);
+        }
     }
 }
