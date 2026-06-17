@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class zPointsManager : MonoBehaviour
+public class z_points_manager : MonoBehaviour
 {
     [SerializeField] public Text zPointText;
     public float zPoints = 0;

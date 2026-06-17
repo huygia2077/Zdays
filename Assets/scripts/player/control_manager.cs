@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class controlManager : MonoBehaviour
+public class control_manager : MonoBehaviour
 {
     public bool controlable = true;
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
 
-public class bulletFragment : MonoBehaviour
+public class bullet_fragment : MonoBehaviour
 {
     [SerializeField] public Light2D sparkLight;
 

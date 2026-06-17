@@ -4,7 +4,7 @@ using Unity.Cinemachine;
 using UnityEngine.Rendering.Universal;
 using System.Collections;
 
-public class Shoot : MonoBehaviour
+public class shoot : MonoBehaviour
 {
     [SerializeField] public PlayerInput playerInput;
     private CinemachineImpulseSource impulseSource;
@@ -14,12 +14,12 @@ public class Shoot : MonoBehaviour
     [SerializeField] public Light2D gunFire;
     [SerializeField] public float fireRate;
     [SerializeField] public bool canShoot = true;
-    private controlManager controlManager;
+    private control_manager controlManager;
 
 
     void Start()
     {
-        controlManager = gameObject.GetComponent<controlManager>();
+        controlManager = gameObject.GetComponent<control_manager>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
         gunFire.enabled = false;
     }
@@ -28,7 +28,7 @@ public class Shoot : MonoBehaviour
     {
         if (canShoot && controlManager.controlable)
         {
-            cameraShakeManager.instance.cameraShake(impulseSource);
+            camera_shake_manager.instance.cameraShake(impulseSource);
             GameObject bullets = Instantiate(bullet, gunPoint.position, Quaternion.identity);
             Rigidbody2D brb = bullets.GetComponent<Rigidbody2D>();
             brb.AddForce(gunPoint.up * 2f, ForceMode2D.Impulse);
@@ -37,13 +37,15 @@ public class Shoot : MonoBehaviour
         }
     }
 
+
+    // Fire muzzle effect
     IEnumerator fireSpark()
     {
         gunFire.enabled = true;
         yield return new WaitForSeconds(0.01f);
         gunFire.enabled = false;
     }
-
+    // Cooldown time acts as gun's fire rate
     IEnumerator shootCooldown()
     {
         canShoot = false;

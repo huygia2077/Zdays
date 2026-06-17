@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class item : MonoBehaviour
 {
-    [SerializeField] public itemInformation itemInfo;
+    [SerializeField] public item_information itemInfo;
     [SerializeField] public shop_manager shopManager;
     [SerializeField] public prototype_manager prototypeManager;
 
@@ -36,7 +36,7 @@ public class item : MonoBehaviour
         if (itemInfo.type == "object")
         {
             shopManager.closeShop();
-            prototypeManager.enablePrototype();
+            prototypeManager.enablePrototype(itemInfo);
         }
     }
 }

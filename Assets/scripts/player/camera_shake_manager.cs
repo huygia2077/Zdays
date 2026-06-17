@@ -2,9 +2,9 @@ using UnityEngine;
 using Unity.Cinemachine;
 
 
-public class cameraShakeManager : MonoBehaviour
+public class camera_shake_manager : MonoBehaviour
 {
-    public static cameraShakeManager instance;
+    public static camera_shake_manager instance;
     [SerializeField] public float force = 1f;
 
     void Awake()

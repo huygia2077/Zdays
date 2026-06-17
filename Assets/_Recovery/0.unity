@@ -5753,7 +5753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b7f0c3058a80f4bbb64cf91498e906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::cameraShakeManager
-  force: 2
+  force: 1
 --- !u!4 &2079301131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 863684819848421523, guid: 3f45d2fdfeaaf964a962699a5ef0d421, type: 3}
@@ -6379,13 +6379,13 @@ BoxCollider2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1852475919}
   - {fileID: 619394802}
-  - {fileID: 1275778608}
   - {fileID: 1044665342}
+  - {fileID: 1852475919}
   - {fileID: 1140642152}
-  - {fileID: 1770721311}
+  - {fileID: 1275778608}
   - {fileID: 1323768545}
   - {fileID: 1649062756}
+  - {fileID: 1770721311}
   - {fileID: 2114837596}
   - {fileID: 1608281134}

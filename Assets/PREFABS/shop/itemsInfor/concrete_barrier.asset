@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: 617952202591393388, guid: 53518ded04de22748961dea29007f54c, type: 3}
   scale: 0.3
-  objectScalingSize: 0
+  objectScalingSize: 0.4
   cost: 20
   type: object
   itemName: Concrete barrier

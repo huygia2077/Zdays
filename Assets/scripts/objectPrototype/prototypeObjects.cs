@@ -1,37 +1,42 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class prototypeObjects : MonoBehaviour
+public class prototype_objects : MonoBehaviour
 {
+    public GameObject placedObject;
+    private float inputDirection;
+    private int collisionCount = 0;
     [SerializeField] public Camera cam;
     [SerializeField] public SpriteRenderer sprite;
     [SerializeField] public Color placeableColor;
     [SerializeField] public Color unplaceableColor;
-    [SerializeField] public GameObject placedObject;
     [SerializeField] public float rotateSpeed;
     [SerializeField] private PlayerInput playerInput;
-    private float inputDirection;
 
-    private int collisionCount = 0;
+
     void Start()
     {
         cam = Camera.main;
         sprite = gameObject.GetComponent<SpriteRenderer>();
+
+        // Add onPlace() function to action "Place" of player
         playerInput = GameObject.Find("Player").GetComponent<PlayerInput>();
         playerInput.actions["Place"].performed += onPlace;
+
+        // Add BoxCollider2D when enable prototype object
         BoxCollider2D bc =transform.AddComponent<BoxCollider2D>();
         bc.isTrigger = true;
     }
 
+
+    // Dectecting whether the prototype is collided with anything in the current scene
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.name);
         if (other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
         {
             collisionCount++;
         }
     }
-
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
@@ -41,6 +46,8 @@ public class prototypeObjects : MonoBehaviour
         }
     }
 
+
+    // Function trigger the place action when player wants to place object
     void onPlace(InputAction.CallbackContext context)
     {
         if (!(collisionCount > 0))
@@ -49,6 +56,16 @@ public class prototypeObjects : MonoBehaviour
         }
     }
 
+
+    // Clear the action "place" when finishing placing
+    public void onDisabled()
+    {
+        playerInput.actions["Place"].performed -= onPlace;
+        Destroy(gameObject);
+    }
+
+
+    // Update the rotation of prototype
     void rotationUpdate()
     {
         inputDirection = playerInput.actions["RotatePrototype"].ReadValue<float>();
@@ -59,6 +76,7 @@ public class prototypeObjects : MonoBehaviour
             transform.Rotate(Vector3.forward * rotationAmount);
         }
     }
+
 
     void Update()
     {
@@ -79,9 +97,4 @@ public class prototypeObjects : MonoBehaviour
         rotationUpdate();
     }
 
-    public void onDisabled()
-    {
-        playerInput.actions["Place"].performed -= onPlace;
-        Destroy(gameObject);
-    }
 }

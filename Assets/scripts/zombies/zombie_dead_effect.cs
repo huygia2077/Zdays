@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 public class zombie_dead_effet : MonoBehaviour
 {
-    [SerializeField] public List<deadLimbs> limbs = new List<deadLimbs>();
+    [SerializeField] public List<dead_limbs> limbs = new List<dead_limbs>();
     [SerializeField] public GameObject limbPrefab;
     [SerializeField] public float force = 1f;
     [SerializeField] public GameObject blood_dead_effect;
     
     public void play_dead_effect()
     {
-        foreach (deadLimbs limb in limbs)
+        foreach (dead_limbs limb in limbs)
         {
             GameObject obj = Instantiate(limbPrefab, transform.position, Quaternion.identity);
             SpriteRenderer obj_sprite =  obj.GetComponent<SpriteRenderer>();

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "itemInformation", menuName = "Scriptable Objects/itemInformation")]
-public class itemInformation : ScriptableObject
+public class item_information : ScriptableObject
 {
     public Sprite sprite;
     public float scale;

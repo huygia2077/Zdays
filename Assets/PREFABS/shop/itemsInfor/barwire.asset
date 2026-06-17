@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: -8447693755266998078, guid: 3b0a1c6e2e520d04caebbb5dc073ffd4, type: 3}
   scale: 0.3
-  objectScalingSize: 0
+  objectScalingSize: 0.3
   cost: 10
   type: object
   itemName: Barwire

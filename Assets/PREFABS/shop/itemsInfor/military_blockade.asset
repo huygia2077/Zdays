@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::itemInformation
   sprite: {fileID: 8765007211635695963, guid: 47b1ec2c6164d3f48a917f9b65376f5c, type: 3}
   scale: 0.17
-  objectScalingSize: 0
+  objectScalingSize: 0.25
   cost: 50
   type: object
   itemName: Military blockade

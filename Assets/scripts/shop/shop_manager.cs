@@ -4,11 +4,11 @@ public class shop_manager : MonoBehaviour
 {
     public bool shopEnabled = false;
     [SerializeField] public Animator shopAnimation;
-    private controlManager controlManager;
+    private control_manager controlManager;
     private prototype_manager prototypeManager;
     void Start()
     {
-        controlManager = GameObject.Find("Player").GetComponent<controlManager>();
+        controlManager = GameObject.Find("Player").GetComponent<control_manager>();
         prototypeManager = GameObject.Find("prototypeManager").GetComponent<prototype_manager>();
     }
     public void openShop()

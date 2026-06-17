@@ -1,22 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class movement : MonoBehaviour
 
 {
     [SerializeField] public float speed;
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] public Transform tf;
     [SerializeField] public Camera cam;
-    private controlManager controlManager;
-
-
+    private control_manager controlManager;
     private Vector2 movementDirection;
     private Vector2 mousePosition;
 
     void Start()
     {
-        controlManager = gameObject.GetComponent<controlManager>();
+        controlManager = gameObject.GetComponent<control_manager>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
