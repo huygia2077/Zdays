@@ -179,3 +179,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::remove_obstacle
+  ashesEffect: {fileID: 5516911165926692714, guid: 0a7fb34690d3c4449ac0a7cf12da6e1b, type: 3}
+  boxCollider: {fileID: 5315467116289772985}
