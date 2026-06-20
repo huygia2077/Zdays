@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 92058195377252485}
   - component: {fileID: 2998103420765723987}
   - component: {fileID: 833836624949607369}
+  - component: {fileID: -5518222689353888266}
   m_Layer: 8
   m_Name: bared_wire_0
   m_TagString: obstacle
@@ -166,3 +167,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5518222689353888266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158730541219405184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::remove_obstacle

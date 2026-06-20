@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5862861487061398794}
   - component: {fileID: 5315467116289772985}
   - component: {fileID: 5147111287128007927}
+  - component: {fileID: 495403847230633867}
   m_Layer: 6
   m_Name: military_barrier_0
   m_TagString: solid_obstacle
@@ -166,3 +167,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &495403847230633867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954606759074593157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::remove_obstacle

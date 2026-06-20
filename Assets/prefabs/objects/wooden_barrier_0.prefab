@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4713160948939068870}
   - component: {fileID: 3682917474387552299}
   - component: {fileID: 2570682878855339711}
+  - component: {fileID: 1203352631399086955}
   m_Layer: 8
   m_Name: wooden_barrier_0
   m_TagString: obstacle
@@ -166,3 +167,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1203352631399086955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498542110463638791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::remove_obstacle
