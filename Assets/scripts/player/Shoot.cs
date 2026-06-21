@@ -15,23 +15,26 @@ public class shoot : MonoBehaviour
     [SerializeField] public float fireRate;
     [SerializeField] public bool canShoot = true;
     private control_manager controlManager;
+    private weapon_manager weaponManager;
 
 
     void Start()
     {
         controlManager = gameObject.GetComponent<control_manager>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
+        weaponManager = GameObject.Find("weaponsManager").GetComponent<weapon_manager>();
         gunFire.enabled = false;
     }
 
     public void OnShoot()
     {
-        if (canShoot && controlManager.controlable)
+        if (canShoot && controlManager.controlable && weaponManager.canShoot)
         {
             camera_shake_manager.instance.cameraShake(impulseSource);
             GameObject bullets = Instantiate(bullet, gunPoint.position, Quaternion.identity);
             Rigidbody2D brb = bullets.GetComponent<Rigidbody2D>();
             brb.AddForce(gunPoint.up * 2f, ForceMode2D.Impulse);
+            weaponManager.depleteAmmo();
             StartCoroutine(fireSpark());
             StartCoroutine(shootCooldown());
         }

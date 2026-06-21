@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class obstacle_destroy_manager : MonoBehaviour
+public class obstacles_manager : MonoBehaviour
 {
     public bool destroyable = false;
     public void enableDestroy()
@@ -12,10 +12,14 @@ public class obstacle_destroy_manager : MonoBehaviour
     {
         destroyable = false;
     }
+    public void toggleDestoryMode()
+    {
+        destroyable = !destroyable;
+    }
 
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame && destroyable)
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
             RaycastHit2D raycastHit = Physics2D.Raycast(mouseRay.origin, Vector2.zero);
@@ -23,7 +27,7 @@ public class obstacle_destroy_manager : MonoBehaviour
 
             if (clickedObject)
             {
-                clickedObject.GetComponent<remove_obstacle>()?.removeObject();
+                clickedObject.GetComponent<obstacle>()?.removeObject();
             }
         }
     }
