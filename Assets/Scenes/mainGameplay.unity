@@ -511,6 +511,7 @@ Transform:
   - {fileID: 1770721311}
   - {fileID: 1952827746}
   - {fileID: 1997021873}
+  - {fileID: 2114837596}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130460777
@@ -6297,7 +6298,7 @@ GameObject:
   - component: {fileID: 2114837598}
   - component: {fileID: 2114837597}
   m_Layer: 0
-  m_Name: zombie_spawner
+  m_Name: zombieSpawnerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6311,13 +6312,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114837595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -21.51, z: 0}
   m_LocalScale: {x: 7.31, y: 0.79, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1354975909}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 103228064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2114837597
 MonoBehaviour:
@@ -6913,5 +6914,4 @@ SceneRoots:
   - {fileID: 1140642152}
   - {fileID: 1323768545}
   - {fileID: 1649062756}
-  - {fileID: 2114837596}
   - {fileID: 1608281134}
