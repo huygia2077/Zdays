@@ -28,10 +28,9 @@ public class transition : MonoBehaviour
         {
             StartCoroutine(FadeMixer());
         }
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
-
 
 
     private IEnumerator FadeMixer()
