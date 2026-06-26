@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 public class prototype_objects : MonoBehaviour
 {
     public GameObject placedObject;
@@ -52,7 +53,10 @@ public class prototype_objects : MonoBehaviour
     {
         if (!(collisionCount > 0))
         {
-            Instantiate(placedObject, transform.position, transform.rotation);
+            // Place the obstacle then scan the map for pathfinding
+            GameObject objects = Instantiate(placedObject, transform.position, transform.rotation);
+            Bounds bound = objects.GetComponent<BoxCollider2D>().bounds;
+            AstarPath.active.UpdateGraphs(bound);
         }
     }
 

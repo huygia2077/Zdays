@@ -42,6 +42,10 @@ public class obstacle : MonoBehaviour
     
     public void removeObject()
     {
+        // Rescan the map before destroy an obstacle
+        Bounds bound = boxCollider.bounds;
+        boxCollider.enabled = false;
+        AstarPath.active.UpdateGraphs(bound);
         playEffect();
         Destroy(gameObject);
     }

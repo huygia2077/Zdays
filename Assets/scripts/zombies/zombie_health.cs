@@ -7,11 +7,13 @@ public class zombie_health : MonoBehaviour
     [SerializeField] public zombie_dead_effet effect;
     [SerializeField] public GameObject damaged_blood;
     [SerializeField] public z_points_manager pointsManager;
+    [SerializeField] public zombie_spawn_manager spawnerManager;
 
 
     void Start()
     {
         pointsManager = GameObject.Find("killCount").GetComponent<z_points_manager>();
+        spawnerManager = GameObject.Find("zombieSpawnerManager").GetComponent<zombie_spawn_manager>();
     }
     public void getDamage()
     {
@@ -28,6 +30,7 @@ public class zombie_health : MonoBehaviour
         {
             effect.play_dead_effect();
             pointsManager.addPoints(zPoints);
+            spawnerManager.killCount();
             Destroy(gameObject);
         }
     }
