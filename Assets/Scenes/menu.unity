@@ -1692,6 +1692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sceneTransition
       objectReference: {fileID: 0}
+    - target: {fileID: 5572370318529416801, guid: e0d825d5728c91f43ad763fee3843f2e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7532115971006704550, guid: e0d825d5728c91f43ad763fee3843f2e, type: 3}
       propertyPath: m_Camera
       value: 

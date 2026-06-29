@@ -5,6 +5,7 @@ using System.Collections;
 public class weapon_manager : MonoBehaviour
 {
     [SerializeField] public int ammo;
+    [SerializeField] public int maxAmmo;
     [SerializeField] private Text ammoDisplay;
     public bool canShoot = true;
 
