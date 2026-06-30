@@ -17,15 +17,15 @@ public class weapon_manager : MonoBehaviour
     public void depleteAmmo()
     {
         ammo -= 1;
+        if (ammo <= 0)
+        {
+            reload();
+        }
     }
 
     void Update()
     {
         ammoDisplay.text = ammo.ToString();
-        if (ammo <= 0)
-        {
-            reload();
-        }
     }
 
 
@@ -33,6 +33,6 @@ public class weapon_manager : MonoBehaviour
     {
         yield return new WaitForSeconds(reloadTime);
         canShoot = true;
-        ammo = 30;
+        ammo = maxAmmo;
     }
 }

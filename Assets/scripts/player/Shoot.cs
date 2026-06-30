@@ -14,7 +14,6 @@ public class shoot : MonoBehaviour
     [SerializeField] public Light2D gunFire;
     [SerializeField] public float fireRate;
     [SerializeField] public bool canShoot = true;
-    [SerializeField] public health testHP;
     private control_manager controlManager;
     private weapon_manager weaponManager;
 
@@ -31,7 +30,6 @@ public class shoot : MonoBehaviour
     {
         if (canShoot && controlManager.controlable && weaponManager.canShoot)
         {
-            testHP.takeDamage(10f);
             camera_shake_manager.instance.cameraShake(impulseSource);
             GameObject bullets = Instantiate(bullet, gunPoint.position, Quaternion.identity);
             Rigidbody2D brb = bullets.GetComponent<Rigidbody2D>();
