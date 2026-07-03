@@ -296,7 +296,8 @@ MonoBehaviour:
   zPoints: 2
   effect: {fileID: 6955351085398593473}
   damaged_blood: {fileID: 5586444575461195305, guid: f63b17445c6d27e4087b043c5273382c, type: 3}
-  points: {fileID: 0}
+  pointsManager: {fileID: 0}
+  spawnerManager: {fileID: 0}
 --- !u!114 &-309475249483442624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +380,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc344a557258a474f930d8e5c8122c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  mainTarget: {fileID: 0}
+  defaultTarget: {fileID: 0}
+  player: {fileID: 0}
+  zombieAttack: {fileID: -4086758403205656911}
+  objectsInRange: []
   speed: 0.5
 --- !u!114 &-293332947190135739
 MonoBehaviour:
@@ -408,6 +412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_attack
   attack_range: {fileID: 0}
+  zombieAnimation: {fileID: -293332947190135739}
+  attackableObjects: []
 --- !u!1 &5199796598306033947
 GameObject:
   m_ObjectHideFlags: 0

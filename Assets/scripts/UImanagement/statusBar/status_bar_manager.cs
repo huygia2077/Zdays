@@ -6,12 +6,12 @@ public class status_bar_manager : MonoBehaviour
     [SerializeField] private Image healthBar;
     [SerializeField] private Image damageBar;
     [SerializeField] private Image ammoBar;
-    [SerializeField] private health playerHealth;
+    [SerializeField] private player_health playerHealth;
     [SerializeField] private weapon_manager weaponManager;
 
     void Start()
     {
-        playerHealth = GameObject.Find("Player").GetComponent<health>();
+        playerHealth = GameObject.Find("Player").GetComponent<player_health>();
         weaponManager = GameObject.Find("weaponsManager").GetComponent<weapon_manager>();
     }
 

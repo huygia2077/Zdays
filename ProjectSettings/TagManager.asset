@@ -6,7 +6,6 @@ TagManager:
   tags:
   - solid_obstacle
   - enemy
-  - mainTarget
   - obstacle
   layers:
   - Default
