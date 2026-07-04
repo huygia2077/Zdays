@@ -6,11 +6,15 @@ using System.Collections.Generic;
 
 public class zombie_movement : MonoBehaviour
 {
+    // Zombie's target objects
     [SerializeField] private GameObject defaultTarget;
     [SerializeField] private GameObject player;
-    [SerializeField] private zombie_attack zombieAttack;
     [SerializeField] private List<GameObject> objectsInRange = new List<GameObject>();
 
+    // Zombie attack manager
+    [SerializeField] private zombie_attack zombieAttack;
+
+    // Zombie movement
     [SerializeField] public float speed;
     private AIPath aiPath;
     private float stuckTime = 0f, stuckDuration = 1f;
@@ -26,10 +30,13 @@ public class zombie_movement : MonoBehaviour
         lastPosition = gameObject.transform.position;
         zombieAttack.attackableObjects = objectsInRange;
 
+        // Repeatedly updating zombie's path every second
         StartCoroutine(caculatingPath());
 
     }
 
+
+    // Updating path
     IEnumerator caculatingPath()
     {
         while (true)
@@ -49,6 +56,8 @@ public class zombie_movement : MonoBehaviour
         }
     }
 
+
+    // Check if zombie is stuck
     public bool isStuck()
     {   
         float distance = Vector3.Distance(lastPosition, gameObject.transform.position);
@@ -105,7 +114,7 @@ public class zombie_movement : MonoBehaviour
         }
     }
 
-
+    
     void Update()
     {
         if (Vector3.Distance(transform.position, player.transform.position) < 0.5f)
