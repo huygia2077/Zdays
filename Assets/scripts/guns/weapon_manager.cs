@@ -7,11 +7,10 @@ public class weapon_manager : MonoBehaviour
     [SerializeField] public int ammo;
     [SerializeField] public int maxAmmo;
     [SerializeField] private Text ammoDisplay;
-    public bool canShoot = true;
 
     public void reload()
     {
-        canShoot = false;
+        game_manager.instance.playerControlManager.canShoot = false;
         StartCoroutine(reloading(3f));
     }
     public void depleteAmmo()
@@ -32,7 +31,7 @@ public class weapon_manager : MonoBehaviour
     IEnumerator reloading(float reloadTime)
     {
         yield return new WaitForSeconds(reloadTime);
-        canShoot = true;
+        game_manager.instance.playerControlManager.canShoot = true;
         ammo = maxAmmo;
     }
 }

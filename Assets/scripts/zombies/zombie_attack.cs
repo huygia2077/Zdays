@@ -18,7 +18,6 @@ public class zombie_attack : MonoBehaviour
     {   
         if (Time.time >= nextAttackTime)
         {
-            Debug.Log("attack");
             nextAttackTime = Time.time + attackCoolDown;
             zombieAnimation.triggerAttack();
         }

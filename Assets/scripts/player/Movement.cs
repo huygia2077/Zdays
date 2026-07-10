@@ -8,14 +8,8 @@ public class movement : MonoBehaviour
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] public Transform tf;
     [SerializeField] public Camera cam;
-    private control_manager controlManager;
     private Vector2 movementDirection;
     private Vector2 mousePosition;
-
-    void Start()
-    {
-        controlManager = gameObject.GetComponent<control_manager>();
-    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -29,7 +23,7 @@ public class movement : MonoBehaviour
 
     public void Update()
     {
-        if (controlManager.controlable)
+        if (game_manager.instance.playerControlManager.controlable)
         {
             rb.linearVelocity = movementDirection * speed ;
 
