@@ -33,14 +33,14 @@ public class prototype_objects : MonoBehaviour
     // Dectecting whether the prototype is collided with anything in the current scene
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
+        if (other.CompareTag("obstacle") || other.CompareTag("Player") || other.CompareTag("map_obstacle"))
         {
             collisionCount++;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
+        if (other.CompareTag("obstacle") || other.CompareTag("Player") || other.CompareTag("map_obstacle"))
         {
             collisionCount--;
             collisionCount = Mathf.Max(0, collisionCount);

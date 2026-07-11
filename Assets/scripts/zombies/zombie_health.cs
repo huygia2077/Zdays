@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class zombie_health : MonoBehaviour
+public class zombie_health : MonoBehaviour, healthInterface
 {
     [SerializeField] public float HP;
     [SerializeField] public int zPoints;
@@ -15,9 +15,9 @@ public class zombie_health : MonoBehaviour
         pointsManager = GameObject.Find("killCount").GetComponent<z_points_manager>();
         spawnerManager = GameObject.Find("zombieSpawnerManager").GetComponent<zombie_spawn_manager>();
     }
-    public void getDamage()
+    public void takeDamage(float damage)
     {
-        HP -= 1;
+        HP -= damage;
         for (int i=0 ; i<Random.Range(1f, 3f); i++)
         {
             Instantiate(damaged_blood, (Vector2)transform.position + Random.insideUnitCircle * Random.Range(0.05f, 0.2f), Quaternion.identity);

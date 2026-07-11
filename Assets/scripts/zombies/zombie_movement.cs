@@ -101,14 +101,14 @@ public class zombie_movement : MonoBehaviour
     // Check what object are in attacking zone
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
+        if (other.CompareTag("Player") || other.CompareTag("obstacle"))
         {
             objectsInRange.Add(other.gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("obstacle") || other.CompareTag("solid_obstacle"))
+        if (other.CompareTag("Player") || other.CompareTag("obstacle"))
         {
             objectsInRange.Remove(other.gameObject);
         }
@@ -117,7 +117,7 @@ public class zombie_movement : MonoBehaviour
     
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 0.5f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 0.5f || isStuck())
         {
             zombieAttack.performAttack();
         }

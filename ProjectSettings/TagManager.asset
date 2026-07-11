@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - solid_obstacle
   - enemy
   - obstacle
+  - map_obstacle
+  - bullet
   layers:
   - Default
   - TransparentFX

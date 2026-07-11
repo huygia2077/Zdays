@@ -9,7 +9,8 @@ public class transition : MonoBehaviour
     [SerializeField] private float transitionTime = 1f;
     [SerializeField] private CanvasGroup transitionCanva;
 
-    [SerializeField] private AudioMixer cutsceneMixer;
+    [SerializeField] private AudioMixer mixer;
+    [SerializeField] private string mixerStringVal;
     [SerializeField] private float fadeDuration = 1.0f;
 
 
@@ -24,7 +25,7 @@ public class transition : MonoBehaviour
         transitionCanva.blocksRaycasts = true;
         transitionCanva.interactable = true;
         yield return new WaitForSeconds(transitionTime);
-        if (cutsceneMixer)
+        if (mixer)
         {
             StartCoroutine(FadeMixer());
         }
@@ -36,7 +37,7 @@ public class transition : MonoBehaviour
     private IEnumerator FadeMixer()
     {
         float currentTime = 0;
-        cutsceneMixer.GetFloat("cutsceneMixer", out float startVolume);
+        mixer.GetFloat(mixerStringVal, out float startVolume);
         float targetVolume = -80f; 
 
         while (currentTime < fadeDuration)
@@ -45,10 +46,10 @@ public class transition : MonoBehaviour
             
             float newVol = Mathf.Lerp(startVolume, targetVolume, currentTime / fadeDuration);
                     
-            cutsceneMixer.SetFloat("cutsceneMixer", newVol);
+            mixer.SetFloat(mixerStringVal, newVol);
             
             yield return null;
         }
-        cutsceneMixer.SetFloat("cutsceneMixer", -80f);
+        mixer.SetFloat(mixerStringVal, -80f);
     }
 }

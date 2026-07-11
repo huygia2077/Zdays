@@ -14,17 +14,11 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {   
-        // // Detect collision with solid obstacle
-        // if (collision.gameObject.CompareTag("solid_obstacle"))
-        // {
-        //     Instantiate(bulletFragments, gameObject.GetComponent<Transform>().position, Quaternion.identity);
-        //     Destroy(gameObject);
-        // }
-        // Detect collision with zombies
         if (collision.gameObject.CompareTag("enemy"))
         {
-            collision.gameObject.GetComponent<zombie_health>().getDamage();
+            healthInterface health = collision.gameObject.GetComponentInParent<healthInterface>();
+            health.takeDamage(1f);
+            Destroy(gameObject);
         }
-        // Destroy(gameObject);
     }
 }

@@ -382,8 +382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   defaultTarget: {fileID: 0}
   player: {fileID: 0}
-  zombieAttack: {fileID: -4086758403205656911}
   objectsInRange: []
+  zombieAttack: {fileID: -4086758403205656911}
   speed: 0.5
 --- !u!114 &-293332947190135739
 MonoBehaviour:
@@ -398,7 +398,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_animation
   animator: {fileID: 4721451261541594889}
-  movement: {fileID: -7263295210332404412}
 --- !u!114 &-4086758403205656911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a27fde67429534a83c6ceb5818d111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::zombie_attack
-  attack_range: {fileID: 0}
+  attackCoolDown: 1
+  nextAttackTime: 0
   zombieAnimation: {fileID: -293332947190135739}
   attackableObjects: []
 --- !u!1 &5199796598306033947

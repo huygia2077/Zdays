@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3682917474387552299}
   - component: {fileID: 2570682878855339711}
   - component: {fileID: 1203352631399086955}
+  - component: {fileID: -8634290141320741675}
   m_Layer: 8
   m_Name: wooden_barrier_0
   m_TagString: obstacle
@@ -183,3 +184,19 @@ MonoBehaviour:
   boxCollider: {fileID: 3682917474387552299}
   ashesSize: {x: 0.2, y: 0.4}
   particleCounts: 15
+  bulletFragments: {fileID: 0}
+  bulletFragmentColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &-8634290141320741675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498542110463638791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4899ea5aa94d78a41aae02d3d1e0f47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
+  current_health: 50
+  obstacle: {fileID: 1203352631399086955}

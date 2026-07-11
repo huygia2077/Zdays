@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5999826633403879010}
   - component: {fileID: 7827705453965796550}
   - component: {fileID: -1462222210006329456}
+  - component: {fileID: 6971974008836505044}
   m_Layer: 6
   m_Name: concrete_barrier_0
-  m_TagString: solid_obstacle
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,3 +184,19 @@ MonoBehaviour:
   boxCollider: {fileID: 7827705453965796550}
   ashesSize: {x: 0.3, y: 0.5}
   particleCounts: 25
+  bulletFragments: {fileID: 0}
+  bulletFragmentColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &6971974008836505044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425940596395242680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4899ea5aa94d78a41aae02d3d1e0f47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
+  current_health: 100
+  obstacle: {fileID: -1462222210006329456}

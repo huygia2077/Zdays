@@ -19,4 +19,4 @@ MonoBehaviour:
   type: object
   itemName: Military blockade
   discription: A military grade blockade can be resilient due to its great durability
-  objectPrefab: {fileID: 8954606759074593157, guid: 3f45d2fdfeaaf964a962699a5ef0d421, type: 3}
+  objectPrefab: {fileID: 8954606759074593157, guid: d9e9f5506b7a614469750669c3caed4a, type: 3}
