@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 600424375212815465}
   - component: {fileID: 651350739589913850}
   - component: {fileID: 5806243243944949232}
+  - component: {fileID: -5251288122089700245}
   m_Layer: 6
   m_Name: container_1
-  m_TagString: solid_obstacle
+  m_TagString: map_obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,3 +167,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5251288122089700245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8904402830100520660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::obstacle
+  ashesEffect: {fileID: 0}
+  boxCollider: {fileID: 651350739589913850}
+  ashesSize: {x: 0, y: 0}
+  particleCounts: 0
+  bulletFragments: {fileID: 8997741667007924997, guid: 8f900fe5369a5c14795773452f953e39, type: 3}
+  bulletFragmentColor: {r: 0.8980392, g: 0.7607843, b: 0, a: 1}

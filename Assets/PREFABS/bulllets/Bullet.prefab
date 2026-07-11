@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3552270163167611391}
   m_Layer: 7
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,4 +302,3 @@ MonoBehaviour:
   rb: {fileID: 8853030043385219572}
   cd: {fileID: -4204224887934753731}
   lifeTime: 1
-  bulletFragments: {fileID: 2485341862515593086, guid: 8f900fe5369a5c14795773452f953e39, type: 3}
