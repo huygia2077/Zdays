@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class game_manager : MonoBehaviour
 {
@@ -17,11 +18,41 @@ public class game_manager : MonoBehaviour
     // Managing gameover UI
     [SerializeField] private Animator gameoverAnimation;
     [SerializeField] private GameObject gameoverUI;
+    [SerializeField] private Text zombieKilled;
+    [SerializeField] private Text days;
+
+
+    public int budget = 500;
+    [SerializeField] private int killCounts = 0;
+    [SerializeField] private int survivedDays = 0;
+    [SerializeField] private Text[] budgetDisplay;
 
 
     void Start()
     {
         instance = this;
+        updateBudget();
+    }
+
+    private void updateBudget()
+    {
+        foreach (Text text in budgetDisplay)
+        {   
+            text.text = budget.ToString() + " $";
+        }
+    }
+    public void changeBudget(int amount)
+    {
+        budget += amount;
+        budget = (budget <= 0) ? 0 : budget;
+
+        updateBudget();
+    }
+
+
+    public void addKillCount(int amount)
+    {
+        killCounts += amount;
     }
 
 
@@ -30,5 +61,7 @@ public class game_manager : MonoBehaviour
     {
         gameoverUI.SetActive(true);
         gameoverAnimation.SetTrigger("gameover");
+        days.text = "Survived days: " + survivedDays.ToString();
+        zombieKilled.text = "Zombies killed: " + killCounts.ToString();
     }
 }

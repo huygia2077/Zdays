@@ -6,15 +6,8 @@ public class zombie_health : MonoBehaviour, healthInterface
     [SerializeField] public int zPoints;
     [SerializeField] public zombie_dead_effet effect;
     [SerializeField] public GameObject damaged_blood;
-    [SerializeField] public z_points_manager pointsManager;
-    [SerializeField] public zombie_spawn_manager spawnerManager;
 
 
-    void Start()
-    {
-        pointsManager = GameObject.Find("killCount").GetComponent<z_points_manager>();
-        spawnerManager = GameObject.Find("zombieSpawnerManager").GetComponent<zombie_spawn_manager>();
-    }
     public void takeDamage(float damage)
     {
         HP -= damage;
@@ -29,8 +22,8 @@ public class zombie_health : MonoBehaviour, healthInterface
         if (HP <= 0)
         {
             effect.play_dead_effect();
-            pointsManager.addPoints(zPoints);
-            spawnerManager.killCount();
+            game_manager.instance.zombieSpawnerManager.killCount();
+            game_manager.instance.addKillCount(1);
             Destroy(gameObject);
         }
     }

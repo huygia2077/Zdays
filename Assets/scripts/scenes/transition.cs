@@ -19,7 +19,17 @@ public class transition : MonoBehaviour
         StartCoroutine(loading(transitionTime));
     }
 
-    IEnumerator loading(float transitionTime)
+    public void restartGameplay()
+    {
+        StartCoroutine(loading(transitionTime, 2));
+    }
+
+    public void loadMenu()
+    {
+        StartCoroutine(loading(transitionTime, 0));
+    }
+
+    IEnumerator loading(float transitionTime, int sceneIndex = -1)
     {
         animate.SetTrigger("transit");
         transitionCanva.blocksRaycasts = true;
@@ -30,8 +40,16 @@ public class transition : MonoBehaviour
             StartCoroutine(FadeMixer());
         }
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (sceneIndex == -1)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        } else
+        {
+            SceneManager.LoadScene(sceneIndex);
+        }
     }
+
+
 
 
     private IEnumerator FadeMixer()

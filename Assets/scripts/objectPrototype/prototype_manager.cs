@@ -14,6 +14,7 @@ public class prototype_manager : MonoBehaviour
         prototype.GetComponent<SpriteRenderer>().sprite = itemInfo.sprite;
         prototype.GetComponent<prototype_objects>().placedObject = itemInfo.objectPrefab;
         prototype.transform.localScale = new Vector3(itemInfo.objectScalingSize, itemInfo.objectScalingSize, itemInfo.objectScalingSize);
+        prototype.GetComponent<prototype_objects>().cost = itemInfo.cost;
     }
     // Function hides the demonstration of prototype when finish placing
     public void disablePrototype()
