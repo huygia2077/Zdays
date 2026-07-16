@@ -27,10 +27,21 @@ public class zombie_spawn_manager : MonoBehaviour
     {
         AstarPath.active.Scan();
         playerInput = GameObject.Find("Player").GetComponent<PlayerInput>();
-        playerInput.actions["StartNewWave"].performed += startWave;
-
         startTimer();
+        playerInput.actions["StartNewWave"].performed += startWave;
     }
+
+
+
+    // Unsubscribe when the object is deactivated or destroyed
+    void OnDestroy()
+    {
+        if (playerInput != null && playerInput.actions != null)
+        {
+            playerInput.actions["StartNewWave"].performed -= startWave;
+        }
+    }
+
 
     // Start the spawn timer
     private void startTimer()
@@ -97,6 +108,7 @@ public class zombie_spawn_manager : MonoBehaviour
         zombieSpawnedCount = Random.Range(5, 10);
         StartCoroutine(spawnZombies(zombieSpawnedCount));
     }
+
 
     // Slowly spawn the zombie each second
     IEnumerator spawnZombies(int spawnAmount)
