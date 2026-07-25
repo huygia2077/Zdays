@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Collections;
 using UnityEngine.Audio;
 
 public enum soundType
@@ -13,6 +14,9 @@ public enum soundType
 public class sounds_manager : MonoBehaviour
 {
     public static sounds_manager intance;
+    [SerializeField] private AudioMixer masterMixer;
+    [SerializeField] private float fadeDuration = 2f;
+
     private AudioSource audioSource;
     [SerializeField] private audioGroups[] audios;
     
@@ -30,6 +34,7 @@ public class sounds_manager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        masterMixer.SetFloat("masterMixer", 0f);
     }
 
     #if UNITY_EDITOR
@@ -49,5 +54,30 @@ public class sounds_manager : MonoBehaviour
         AudioClip[] audioClips = intance.audios[(int)SFX].getSounds;
         AudioClip audio = audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
         intance.audioSource.PlayOneShot(audio, vol);
+    }
+
+
+    public void FadeMasterVolumn()
+    {
+        StartCoroutine(FadeMixer());
+    }
+    private IEnumerator FadeMixer()
+    {   
+        float startVolume;
+        float currentTime = 0;
+        masterMixer.GetFloat("masterMixer", out  startVolume);
+        float targetVolume = -80f; 
+
+        while (currentTime < fadeDuration)
+        {
+            currentTime += Time.deltaTime;
+            
+            float newVol = Mathf.Lerp(startVolume, targetVolume, currentTime / fadeDuration);
+                    
+            masterMixer.SetFloat("masterMixer", newVol);
+            
+            yield return null;
+        }
+        masterMixer.SetFloat("masterMixer", -80f);
     }
 }

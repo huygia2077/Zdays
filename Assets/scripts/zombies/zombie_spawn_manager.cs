@@ -105,6 +105,7 @@ public class zombie_spawn_manager : MonoBehaviour
     // Start spawning zombie
     private void startSpawn()
     {
+        game_manager.instance.startNewDay();
         zombieSpawnedCount = Random.Range(5, 10);
         StartCoroutine(spawnZombies(zombieSpawnedCount));
     }

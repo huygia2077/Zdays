@@ -7,6 +7,8 @@ public class game_manager : MonoBehaviour
     public static game_manager instance;
 
     // Managers scipt;
+    [Space(10)]
+    [Header("Manger Scripts")]
     [SerializeField] public prototype_manager prototypeManager;
     [SerializeField] public obstacles_manager obstacleManager;
     [SerializeField] public zombie_spawn_manager zombieSpawnerManager;
@@ -16,12 +18,22 @@ public class game_manager : MonoBehaviour
     [SerializeField] public sounds_manager soundsManager;
 
     // Managing gameover UI
+    [Space(10)]
+    [Header("Gameover UI & Animations")]
     [SerializeField] private Animator gameoverAnimation;
     [SerializeField] private GameObject gameoverUI;
     [SerializeField] private Text zombieKilled;
-    [SerializeField] private Text days;
+    [SerializeField] private Text daysPassed;
 
+    // Managing new day and reward UI   
+    [Space(10)]
+    [Header("Days passed and reward UI")]
+    [SerializeField] private Animator daysAndRewards;
+    [SerializeField] private Text day;
 
+    // Statistic
+    [Space(10)]
+    [Header("Survied days statistic")]
     public int budget = 500;
     [SerializeField] private int killCounts = 0;
     [SerializeField] private int survivedDays = 0;
@@ -61,7 +73,19 @@ public class game_manager : MonoBehaviour
     {
         gameoverUI.SetActive(true);
         gameoverAnimation.SetTrigger("gameover");
-        days.text = "Survived days: " + survivedDays.ToString();
+        daysPassed.text = "Survived days: " + survivedDays.ToString();
         zombieKilled.text = "Zombies killed: " + killCounts.ToString();
+    }
+
+
+    // Trigger new day animation
+    public void startNewDay()
+    {
+        survivedDays++;
+        daysAndRewards.SetTrigger("startNewDay");
+    }
+    public void updateDaysAndRewards()
+    {
+        day.text = "Day " + survivedDays.ToString();
     }
 }
