@@ -26,17 +26,19 @@ public class sounds_manager : MonoBehaviour
         [SerializeField] AudioClip[] sounds;
     }
     
+    // Initialize Audios
     void Awake()
     {
         intance = this;
     }
-
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         masterMixer.SetFloat("masterMixer", 0f);
     }
 
+
+    // Change the audio groups name
     #if UNITY_EDITOR
     private void OnEnable()
     {
@@ -49,6 +51,8 @@ public class sounds_manager : MonoBehaviour
     }
     #endif
 
+
+    // Trigger SFX
     public void playSFX(soundType SFX, float vol = 1)
     {
         AudioClip[] audioClips = intance.audios[(int)SFX].getSounds;
@@ -57,6 +61,7 @@ public class sounds_manager : MonoBehaviour
     }
 
 
+    // Fade Audios
     public void FadeMasterVolumn()
     {
         StartCoroutine(FadeMixer());

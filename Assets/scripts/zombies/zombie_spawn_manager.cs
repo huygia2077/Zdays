@@ -131,6 +131,7 @@ public class zombie_spawn_manager : MonoBehaviour
         if (zombieSpawnedCount <= 0)
         {
             startTimer();
+            game_manager.instance.addRewards();
         }
     }
 }

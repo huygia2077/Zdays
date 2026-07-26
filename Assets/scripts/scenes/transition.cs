@@ -10,39 +10,39 @@ public class transition : MonoBehaviour
     [SerializeField] private float transitionTime = 1f;
     [SerializeField] private CanvasGroup transitionCanva;
 
-    // [Header("Audio Control")]
-
-    // [SerializeField] private AudioMixer mixer;
-    // [SerializeField] private string mixerStringVal;
-    // [SerializeField] private float fadeDuration = 1.0f;
-
-
+    // Load Scene
     public void loadScene()
     {
         StartCoroutine(loading(transitionTime));
     }
 
+    // Restart gameplay
     public void restartGameplay()
     {
         StartCoroutine(loading(transitionTime, 2));
     }
 
+    // Load Menu
     public void loadMenu()
     {
         StartCoroutine(loading(transitionTime, 0));
     }
 
+
+    // Trigger scene transition
     IEnumerator loading(float transitionTime, int sceneIndex = -1)
     {
+        // Starting transition
         animate.SetTrigger("transit");
         transitionCanva.blocksRaycasts = true;
         transitionCanva.interactable = true;
-
         yield return new WaitForSeconds(transitionTime);
 
+        // Fade the audios
         sounds_manager.intance.FadeMasterVolumn();
-
         yield return new WaitForSeconds(2f);
+
+        // Load next scene
         if (sceneIndex == -1)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -50,10 +50,5 @@ public class transition : MonoBehaviour
         {
             SceneManager.LoadScene(sceneIndex);
         }
-    }
-
-
-
-
-    
+    }    
 }

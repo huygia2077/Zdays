@@ -52,13 +52,13 @@ public class prototype_objects : MonoBehaviour
     // Function trigger the place action when player wants to place object
     void onPlace(InputAction.CallbackContext context)
     {
-        if (!(collisionCount > 0) && game_manager.instance.budget - cost >= 0)
+        if (!(collisionCount > 0) && game_manager.instance.shopManager.budget - cost >= 0)
         {
             // Place the obstacle then scan the map for pathfinding
             GameObject objects = Instantiate(placedObject, transform.position, transform.rotation);
             Bounds bound = objects.GetComponent<BoxCollider2D>().bounds;
             AstarPath.active.UpdateGraphs(bound);
-            game_manager.instance.changeBudget(-cost);
+            game_manager.instance.shopManager.purchaseCost(cost);
         }
     }
 
@@ -92,7 +92,7 @@ public class prototype_objects : MonoBehaviour
         targetWorldPos.z = transform.position.z;
         transform.position = targetWorldPos;
 
-        if (collisionCount > 0 || game_manager.instance.budget - cost < 0)
+        if (collisionCount > 0 || game_manager.instance.shopManager.budget - cost < 0)
         {
             sprite.color = unplaceableColor;
         } else
