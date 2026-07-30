@@ -10,30 +10,22 @@ public class shop_manager : MonoBehaviour
     private WaitForSeconds budgetUpdatingTime = new WaitForSeconds(0.01f);
 
 
+
+    // Initialize budget UI text
     void Start()
     {
         updateBudget(0, budget);
     }
 
+
+    // Update budget UI text
     private void updateBudget(int oldBudget, int currentBudget)
     {
         StartCoroutine(updatingBudgetDisplay(oldBudget, currentBudget));
     }
-    public void purchaseCost(int amount)
-    {
-        int oldBudget = budget;
-        budget -= amount;
-        budget = (budget <= 0) ? 0 : budget;
-        updateBudget(oldBudget, budget);
-    }
-    public void addMoney(int amount)
-    {
-        int oldBudget = budget;
-        budget += amount;
-        updateBudget(oldBudget, budget);
-    }
 
 
+    // Budget gradually change effect
     private IEnumerator updatingBudgetDisplay(int oldBudget, int currentBudget)
     {
         while (oldBudget != currentBudget)
@@ -47,12 +39,36 @@ public class shop_manager : MonoBehaviour
         }
     }
 
+
+    // Purchase item action
+    public void purchaseCost(int amount)
+    {
+        int oldBudget = budget;
+        budget -= amount;
+        budget = (budget <= 0) ? 0 : budget;
+        updateBudget(oldBudget, budget);
+    }
+
+
+    // Add money to current budget (rewards)
+    public void addMoney(int amount)
+    {
+        int oldBudget = budget;
+        budget += amount;
+        updateBudget(oldBudget, budget);
+    }
+
+
+    // Open shop
     public void openShop()
     {
         game_manager.instance.playerControlManager.controlable = false;
         shopAnimation.SetTrigger("openShop");
         game_manager.instance.prototypeManager.disablePrototype();
     }
+
+
+    // Close shop
     public void closeShop()
     {
         game_manager.instance.playerControlManager.controlable = true;

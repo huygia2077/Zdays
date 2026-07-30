@@ -47,8 +47,7 @@ public class game_manager : MonoBehaviour
     }
 
     
-
-
+    // Count how many kills player got
     public void addKillCount(int amount)
     {
         killCounts += amount;
@@ -70,18 +69,20 @@ public class game_manager : MonoBehaviour
     {
         survivedDays++;
         daysAndRewards.SetTrigger("startNewDay");
+    }   
+    // Update Day UI text
+    public void updateDays()
+    {
+        day.text = "Day " + survivedDays.ToString();
     }
 
+
+    // Adding reward and trigger the reward animation
     public void addRewards()
     {
         rewardAnimation.SetTrigger("addRewards");
         reward.text = "+" + rewards.ToString() + "$";
         shopManager.addMoney(rewards);
 
-    }
-
-    public void updateDays()
-    {
-        day.text = "Day " + survivedDays.ToString();
     }
 }
