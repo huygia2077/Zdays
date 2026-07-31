@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2570682878855339711}
   - component: {fileID: 1203352631399086955}
   - component: {fileID: -8634290141320741675}
+  - component: {fileID: 5104808806099739962}
   m_Layer: 8
   m_Name: wooden_barrier_0
   m_TagString: obstacle
@@ -200,3 +201,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 50
   obstacle: {fileID: 1203352631399086955}
+--- !u!114 &5104808806099739962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498542110463638791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30fd2bd8c320e5459bd2ea771ba1cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::build_identifier
+  ID: wooden_barrier

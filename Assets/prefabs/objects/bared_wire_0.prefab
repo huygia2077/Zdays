@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 833836624949607369}
   - component: {fileID: -5518222689353888266}
   - component: {fileID: 8572419017698310594}
+  - component: {fileID: -8478534300741429204}
   m_Layer: 8
   m_Name: bared_wire_0
   m_TagString: obstacle
@@ -200,3 +201,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 20
   obstacle: {fileID: -5518222689353888266}
+--- !u!114 &-8478534300741429204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158730541219405184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30fd2bd8c320e5459bd2ea771ba1cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::build_identifier
+  ID: bared_wire

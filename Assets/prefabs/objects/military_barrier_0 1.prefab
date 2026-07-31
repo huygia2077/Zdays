@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5147111287128007927}
   - component: {fileID: 495403847230633867}
   - component: {fileID: -7114092598573064362}
+  - component: {fileID: 1430206425251796300}
   m_Layer: 6
   m_Name: military_barrier_0 1
   m_TagString: obstacle
@@ -200,3 +201,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 130
   obstacle: {fileID: 495403847230633867}
+--- !u!114 &1430206425251796300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954606759074593157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30fd2bd8c320e5459bd2ea771ba1cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::build_identifier
+  ID: military_barrier

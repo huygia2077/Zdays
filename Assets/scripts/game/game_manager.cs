@@ -16,6 +16,7 @@ public class game_manager : MonoBehaviour
     [SerializeField] public shop_manager shopManager;
     [SerializeField] public control_manager playerControlManager;
     [SerializeField] public sounds_manager soundsManager;
+    [SerializeField] public save_manager savedManager;
 
     // Managing gameover UI
     [Space(10)]
@@ -32,6 +33,7 @@ public class game_manager : MonoBehaviour
     [SerializeField] private Animator rewardAnimation;
     [SerializeField] private Text day;
     [SerializeField] private Text reward;
+    public bool startingNewWave = true;
 
     // Statistic
     [Space(10)]
@@ -67,8 +69,12 @@ public class game_manager : MonoBehaviour
     // Trigger new day animation
     public void startNewDay()
     {
-        survivedDays++;
-        daysAndRewards.SetTrigger("startNewDay");
+        if (startingNewWave)
+        {
+            survivedDays++;
+            daysAndRewards.SetTrigger("startNewDay");
+            startingNewWave = false;
+        }
     }   
     // Update Day UI text
     public void updateDays()
