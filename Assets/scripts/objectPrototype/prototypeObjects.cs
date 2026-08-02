@@ -56,6 +56,7 @@ public class prototype_objects : MonoBehaviour
         {
             // Place the obstacle then scan the map for pathfinding
             GameObject objects = Instantiate(placedObject, transform.position, transform.rotation);
+            game_manager.instance.addActiveBuild(objects);
             Bounds bound = objects.GetComponent<BoxCollider2D>().bounds;
             AstarPath.active.UpdateGraphs(bound);
             game_manager.instance.shopManager.purchaseCost(cost);

@@ -7,6 +7,7 @@ public class Building
 {
     public string prefabID;
     public Vector2 position;
+    public float rotation;
     public float damagedStat;
 }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class game_manager : MonoBehaviour
@@ -42,10 +43,27 @@ public class game_manager : MonoBehaviour
     [SerializeField] private int survivedDays = 0;
     [SerializeField] private int rewards = 200;
 
+    // List of active builds in scene;
+    [Space(10)]
+    [Header("Active obstacles in scene")]
+    [SerializeField] private HashSet<GameObject> activeBuilds;
+
 
     void Start()
     {
         instance = this;
+        activeBuilds = new HashSet<GameObject>();
+    }
+
+
+    // Add/Remove actice obstacle
+    public void addActiveBuild(GameObject build)
+    {
+        activeBuilds.Add(build);
+    }
+    public void removeInActiveBuild(GameObject build)
+    {
+        activeBuilds.Remove(build);
     }
 
     
@@ -73,6 +91,7 @@ public class game_manager : MonoBehaviour
         {
             survivedDays++;
             daysAndRewards.SetTrigger("startNewDay");
+            savedManager.saveBuilds(activeBuilds);
             startingNewWave = false;
         }
     }   

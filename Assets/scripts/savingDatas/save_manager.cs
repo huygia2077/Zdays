@@ -29,6 +29,14 @@ public class save_manager : MonoBehaviour
         savedPath = Path.Combine(Application.dataPath, "savedDatas");;
         buildings = new Dictionary<string, GameObject>();
 
+        if (!Directory.Exists(savedPath))
+        {
+            Directory.CreateDirectory(savedPath);
+        }
+
+        // 2. THE FIX: You must combine the folder path with a file name!
+        savedPath = Path.Combine(savedPath, "buildsave.json");
+
         // Load all the building types in game and their IDs
         foreach (BuildsMapping buildMapping in buildTypes)
         {
@@ -39,12 +47,12 @@ public class save_manager : MonoBehaviour
         }
 
         // Load all the builds if the saved file exist;
-        // loadBuildings();
+        loadBuildings();
     }
 
 
     // Save active builds in scene
-    public void saveBuilds(List<GameObject> activeBuilds)
+    public void saveBuilds(HashSet<GameObject> activeBuilds)
     {
         // Clear the old data first before we can overite it with the new one
         savedDatas.savedBuildings.Clear();
@@ -58,6 +66,7 @@ public class save_manager : MonoBehaviour
                 Building currentBuildData = new Building();
                 currentBuildData.prefabID = identifier.ID;
                 currentBuildData.position = identifier.transform.position;
+                currentBuildData.rotation = identifier.transform.eulerAngles.z;
                 currentBuildData.damagedStat = 10f;
                 
                 // Add the saved build to Building Saved list of SaveData()
@@ -85,9 +94,12 @@ public class save_manager : MonoBehaviour
                 if (buildings.TryGetValue(build.prefabID, out GameObject spawnedBuild))
                 {
                     Vector2 spawnPos = build.position;
-                    Instantiate(spawnedBuild, spawnPos, Quaternion.identity);
+                    Quaternion rotationAngle = Quaternion.Euler(0f, 0f, build.rotation);
+                    GameObject obstacle = Instantiate(spawnedBuild, spawnPos, rotationAngle);
+                    obstacle.GetComponent<build_identifier>().currentDamagedStat = build.damagedStat;
                 }
             }
+            Debug.Log("Loaded successfully");
         }
     }
 }

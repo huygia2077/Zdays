@@ -1,0 +1,167 @@
+{
+    "savedBuildings": [
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": -2.9415810108184816,
+                "y": -1.2999660968780518
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": -2.105138063430786,
+                "y": -1.9733564853668213
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": -0.9734804034233093,
+                "y": -1.997957468032837
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 0.29758402705192568,
+                "y": -1.9569551944732667
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "concrete_barrier",
+            "position": {
+                "x": 1.3882405757904053,
+                "y": -1.251719355583191
+            },
+            "rotation": 44.540199279785159,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "concrete_barrier",
+            "position": {
+                "x": 2.282086133956909,
+                "y": -0.603886067867279
+            },
+            "rotation": 349.89349365234377,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "concrete_barrier",
+            "position": {
+                "x": 2.6675050258636476,
+                "y": 0.5195711851119995
+            },
+            "rotation": 100.76094818115235,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": 1.380117654800415,
+                "y": -3.6096982955932619
+            },
+            "rotation": 326.0070495605469,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -1.8799347877502442,
+                "y": -5.30394172668457
+            },
+            "rotation": 18.008296966552736,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": 1.6675372123718262,
+                "y": -6.486767768859863
+            },
+            "rotation": 353.8902587890625,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -0.39896801114082339,
+                "y": -7.326804161071777
+            },
+            "rotation": 320.8555908203125,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -2.4654734134674074,
+                "y": -7.286205768585205
+            },
+            "rotation": 352.06085205078127,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -1.6290311813354493,
+                "y": -3.6588616371154787
+            },
+            "rotation": 352.06085205078127,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -0.3661663830280304,
+                "y": -3.615994930267334
+            },
+            "rotation": 352.06085205078127,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 0.28166663646698,
+                "y": -5.597052097320557
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 1.257516622543335,
+                "y": -5.301836967468262
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 2.003755807876587,
+                "y": -5.588851451873779
+            },
+            "rotation": 0.0,
+            "damagedStat": 10.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 2.2005648612976076,
+                "y": -4.604801177978516
+            },
+            "rotation": 312.96685791015627,
+            "damagedStat": 10.0
+        }
+    ],
+    "savedGameStats": []
+}
