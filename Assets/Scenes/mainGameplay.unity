@@ -549,6 +549,7 @@ MonoBehaviour:
   weaponManager: {fileID: 1997021874}
   shopManager: {fileID: 1689205273}
   playerControlManager: {fileID: 1649062760}
+  playerHealth: {fileID: 1649062761}
   soundsManager: {fileID: 449089511}
   savedManager: {fileID: 1419637874}
   gameoverAnimation: {fileID: 1059039179}
@@ -8077,7 +8078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5572370318529416801, guid: e0d825d5728c91f43ad763fee3843f2e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8059308507534643516, guid: e0d825d5728c91f43ad763fee3843f2e, type: 3}
       propertyPath: mixer
