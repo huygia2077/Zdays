@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 130
   obstacle: {fileID: 495403847230633867}
+  buildIdentifier: {fileID: 1430206425251796300}
 --- !u!114 &1430206425251796300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +215,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::build_identifier
   ID: military_barrier
+  currentDamagedStat: 0

@@ -16,6 +16,7 @@ public class game_manager : MonoBehaviour
     [SerializeField] public weapon_manager weaponManager;
     [SerializeField] public shop_manager shopManager;
     [SerializeField] public control_manager playerControlManager;
+    [SerializeField] public player_health playerHealth;
     [SerializeField] public sounds_manager soundsManager;
     [SerializeField] public save_manager savedManager;
 
@@ -39,8 +40,8 @@ public class game_manager : MonoBehaviour
     // Statistic
     [Space(10)]
     [Header("Survied days statistic")]
-    [SerializeField] private int killCounts = 0;
-    [SerializeField] private int survivedDays = 0;
+    [SerializeField] public int killCounts;
+    [SerializeField] public int survivedDays;
     [SerializeField] private int rewards = 200;
 
     // List of active builds in scene;
@@ -53,6 +54,8 @@ public class game_manager : MonoBehaviour
     {
         instance = this;
         activeBuilds = new HashSet<GameObject>();
+        savedManager.loadSavedGame();
+        updateDays();
     }
 
 
@@ -89,9 +92,9 @@ public class game_manager : MonoBehaviour
     {
         if (startingNewWave)
         {
+            savedManager.saveGame(activeBuilds);
             survivedDays++;
             daysAndRewards.SetTrigger("startNewDay");
-            savedManager.saveBuilds(activeBuilds);
             startingNewWave = false;
         }
     }   

@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 20
   obstacle: {fileID: -5518222689353888266}
+  buildIdentifier: {fileID: -8478534300741429204}
 --- !u!114 &-8478534300741429204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +215,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::build_identifier
   ID: bared_wire
+  currentDamagedStat: 0

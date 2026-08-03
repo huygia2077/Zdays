@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::obstacke_health
   current_health: 50
   obstacle: {fileID: 1203352631399086955}
+  buildIdentifier: {fileID: 5104808806099739962}
 --- !u!114 &5104808806099739962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +215,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::build_identifier
   ID: wooden_barrier
+  currentDamagedStat: 0

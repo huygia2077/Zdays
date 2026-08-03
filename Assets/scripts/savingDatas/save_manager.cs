@@ -45,18 +45,16 @@ public class save_manager : MonoBehaviour
                 buildings.Add(buildMapping.ID, buildMapping.prefabBuild);
             }
         }
-
-        // Load all the builds if the saved file exist;
-        loadBuildings();
     }
 
 
     // Save active builds in scene
-    public void saveBuilds(HashSet<GameObject> activeBuilds)
+    public void saveGame(HashSet<GameObject> activeBuilds)
     {
         // Clear the old data first before we can overite it with the new one
         savedDatas.savedBuildings.Clear();
 
+        // Save the active builds in scene
         foreach (GameObject build in activeBuilds)
         {
             build_identifier identifier = build.GetComponent<build_identifier>();
@@ -67,13 +65,20 @@ public class save_manager : MonoBehaviour
                 currentBuildData.prefabID = identifier.ID;
                 currentBuildData.position = identifier.transform.position;
                 currentBuildData.rotation = identifier.transform.eulerAngles.z;
-                currentBuildData.damagedStat = 10f;
+                currentBuildData.damagedStat = identifier.currentDamagedStat;
                 
                 // Add the saved build to Building Saved list of SaveData()
                 savedDatas.savedBuildings.Add(currentBuildData);
             }
         }
 
+        // Save the game stats
+        savedDatas.savedGameStats.playerHealth = game_manager.instance.playerHealth.currentHealth;
+        savedDatas.savedGameStats.survivedDays = game_manager.instance.survivedDays;
+        savedDatas.savedGameStats.zombieKilled = game_manager.instance.killCounts;
+        
+
+        // Saving to JSON file
         string json = JsonUtility.ToJson(savedDatas, true);
         File.WriteAllText(savedPath, json);
 
@@ -82,13 +87,14 @@ public class save_manager : MonoBehaviour
 
 
     // Load the builds
-    public void loadBuildings()
+    public void loadSavedGame()
     {
         if (File.Exists(savedPath))
         {
             string json = File.ReadAllText(savedPath);
             savedDatas = JsonUtility.FromJson<SaveData>(json);
 
+            // Load builds
             foreach (Building build in savedDatas.savedBuildings)
             {
                 if (buildings.TryGetValue(build.prefabID, out GameObject spawnedBuild))
@@ -97,8 +103,17 @@ public class save_manager : MonoBehaviour
                     Quaternion rotationAngle = Quaternion.Euler(0f, 0f, build.rotation);
                     GameObject obstacle = Instantiate(spawnedBuild, spawnPos, rotationAngle);
                     obstacle.GetComponent<build_identifier>().currentDamagedStat = build.damagedStat;
+                    
+                    game_manager.instance.addActiveBuild(obstacle);
                 }
             }
+
+            // Load Game Stats
+            GameStats savedStats = savedDatas.savedGameStats;
+            game_manager.instance.survivedDays = savedStats.survivedDays;
+            game_manager.instance.killCounts = savedStats.zombieKilled;
+            game_manager.instance.playerHealth.currentHealth = savedStats.playerHealth;
+
             Debug.Log("Loaded successfully");
         }
     }

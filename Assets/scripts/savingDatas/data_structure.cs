@@ -17,7 +17,7 @@ public class Building
 public class GameStats
 {
     public float playerHealth;
-    public int currentDay;
+    public int survivedDays;
     public int zombieKilled;
 }
 
@@ -27,5 +27,5 @@ public class GameStats
 public class SaveData
 {
     public List<Building> savedBuildings = new List<Building>();
-    public List<GameStats> savedGameStats = new List<GameStats> ();
+    public GameStats savedGameStats = new GameStats();
 }
