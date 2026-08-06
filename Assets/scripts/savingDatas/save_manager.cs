@@ -53,6 +53,7 @@ public class save_manager : MonoBehaviour
     {
         // Clear the old data first before we can overite it with the new one
         savedDatas.savedBuildings.Clear();
+        // savedDatas.savedGameStats = default;
 
         // Save the active builds in scene
         foreach (GameObject build in activeBuilds)
@@ -74,6 +75,7 @@ public class save_manager : MonoBehaviour
 
         // Save the game stats
         savedDatas.savedGameStats.playerHealth = game_manager.instance.playerHealth.currentHealth;
+        Debug.Log(savedDatas.savedGameStats.playerHealth);
         savedDatas.savedGameStats.survivedDays = game_manager.instance.survivedDays;
         savedDatas.savedGameStats.zombieKilled = game_manager.instance.killCounts;
         
@@ -89,7 +91,7 @@ public class save_manager : MonoBehaviour
     // Load the builds
     public void loadSavedGame()
     {
-        if (File.Exists(savedPath))
+        if (hasLoadedDatas())
         {
             string json = File.ReadAllText(savedPath);
             savedDatas = JsonUtility.FromJson<SaveData>(json);
@@ -116,5 +118,12 @@ public class save_manager : MonoBehaviour
 
             Debug.Log("Loaded successfully");
         }
+    }
+
+
+    // Check if the saved file exist
+    public bool hasLoadedDatas()
+    {
+        return File.Exists(savedPath);
     }
 }

@@ -4,11 +4,13 @@ public class player_health : MonoBehaviour, healthInterface
 {
     public float maxHealth;
     public float currentHealth;
-    [SerializeField] private game_manager gameManager;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        if (game_manager.instance.savedManager.hasLoadedDatas() == false)
+        {
+            currentHealth = maxHealth;
+        }
     }
 
     public void takeDamage(float damage)
@@ -20,7 +22,7 @@ public class player_health : MonoBehaviour, healthInterface
     {
         if (currentHealth <= 0)
         {
-            gameManager.triggerGameover();
+            game_manager.instance.triggerGameover();
         }
     }
 }

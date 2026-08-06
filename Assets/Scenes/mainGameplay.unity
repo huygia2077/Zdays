@@ -6371,7 +6371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerHealth
   maxHealth: 50
   currentHealth: 50
-  gameManager: {fileID: 103228065}
 --- !u!1 &1653422349
 GameObject:
   m_ObjectHideFlags: 0
