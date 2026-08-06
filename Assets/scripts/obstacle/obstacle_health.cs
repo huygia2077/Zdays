@@ -18,7 +18,6 @@ public class obstacle_health : MonoBehaviour, healthInterface
         if (currentHealth <= 0)
         {            
             buildIdentifier.currentDamagedStat = 0;
-            game_manager.instance.removeInActiveBuild(this.gameObject);
             obstacle.removeObject();
         }
     }

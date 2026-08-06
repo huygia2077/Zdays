@@ -28,14 +28,30 @@ public class shop_manager : MonoBehaviour
     // Budget gradually change effect
     private IEnumerator updatingBudgetDisplay(int oldBudget, int currentBudget)
     {
-        while (oldBudget != currentBudget)
+        float duration = 0.5f; // How long the animation takes in seconds
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration) 
         {
-            oldBudget += (oldBudget > currentBudget) ? -1 : 1;
+            // Increase elapsed time by the time passed since the last frame
+            elapsedTime += Time.deltaTime;
+            
+            // Calculate the current value based on how much time has passed
+            float currentLerp = Mathf.Lerp(oldBudget, currentBudget, elapsedTime / duration);
+            int displayValue = Mathf.RoundToInt(currentLerp);
+            
             foreach (Text text in budgetDisplay)
-            {   
-                text.text = oldBudget.ToString() + " $";
+            {
+                text.text = displayValue.ToString() + " $";
             }
-            yield return budgetUpdatingTime;
+                
+            yield return null;
+        }
+
+        // Failsafe: Ensure it ends exactly on the target number
+        foreach (Text text in budgetDisplay)
+        {
+            text.text = currentBudget.ToString() + " $";
         }
     }
 

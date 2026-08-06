@@ -55,6 +55,7 @@ public class obstacle : MonoBehaviour
         Bounds bound = boxCollider.bounds;
         boxCollider.enabled = false;
         AstarPath.active.UpdateGraphs(bound);
+        game_manager.instance.removeInActiveBuild(this.gameObject);
         Destroy(gameObject);
     }
 

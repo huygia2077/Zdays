@@ -4,8 +4,6 @@ using UnityEngine.UI;
 public class item : MonoBehaviour
 {
     [SerializeField] public item_information itemInfo;
-    [SerializeField] public shop_manager shopManager;
-    [SerializeField] public prototype_manager prototypeManager;
 
     void Start()
     {
@@ -29,6 +27,7 @@ public class item : MonoBehaviour
     {
         if (itemInfo.type == "object")
         {
+            Debug.Log(this.name);
             game_manager.instance.shopManager.closeShop();
             game_manager.instance.prototypeManager.enablePrototype(itemInfo);
         }

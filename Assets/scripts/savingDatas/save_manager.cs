@@ -58,7 +58,7 @@ public class save_manager : MonoBehaviour
         // Save the active builds in scene
         foreach (GameObject build in activeBuilds)
         {
-            build_identifier identifier = build.GetComponent<build_identifier>();
+            build_identifier identifier = build?.GetComponent<build_identifier>();
             
             if (identifier != null)
             {
