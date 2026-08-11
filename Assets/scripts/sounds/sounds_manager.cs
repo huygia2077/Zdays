@@ -6,6 +6,9 @@ using UnityEngine.Audio;
 public enum soundType
 {
     GUNFIRE,
+    METAL_IMPACT,
+    SAND_IMPACT,
+    EMPTY_SHOT,
     RELOAD,
     HURT,
 }
