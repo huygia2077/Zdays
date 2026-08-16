@@ -13,7 +13,7 @@ public class shoot : MonoBehaviour
     [SerializeField] public GameObject bullet;
     [SerializeField] public Light2D gunFire;
     [SerializeField] public float fireRate;
-    [SerializeField] public bool canShoot = true;
+    [SerializeField] public bool triggerShot = true;
 
 
     void Start()
@@ -24,7 +24,7 @@ public class shoot : MonoBehaviour
 
     public void OnShoot()
     {
-        if (canShoot && game_manager.instance.playerControlManager.controlable && game_manager.instance.playerControlManager.canShoot)
+        if (triggerShot && game_manager.instance.playerControlManager.controlable && game_manager.instance.playerControlManager.canShoot)
         {
             sounds_manager.intance.playSFX(soundType.GUNFIRE, 0.2f);
             camera_shake_manager.instance.cameraShake(impulseSource);
@@ -33,6 +33,11 @@ public class shoot : MonoBehaviour
             brb.AddForce(gunPoint.up * 2f, ForceMode2D.Impulse);
             game_manager.instance.weaponManager.depleteAmmo();
             StartCoroutine(fireSpark());
+            StartCoroutine(shootCooldown());
+        } else if (triggerShot && game_manager.instance.weaponManager.isEmpty())
+        {
+            game_manager.instance.soundsManager.playSFX(soundType.EMPTY_SHOT, 1f);
+            Debug.Log("EMPTY");
             StartCoroutine(shootCooldown());
         }
     }
@@ -48,8 +53,8 @@ public class shoot : MonoBehaviour
     // Cooldown time acts as gun's fire rate
     IEnumerator shootCooldown()
     {
-        canShoot = false;
+        triggerShot = false;
         yield return new WaitForSeconds(fireRate);
-        canShoot = true;
+        triggerShot = true;
     }
 }

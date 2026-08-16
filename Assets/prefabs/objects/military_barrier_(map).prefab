@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5862861487061398794}
   - component: {fileID: 5315467116289772985}
   - component: {fileID: 5147111287128007927}
-  - component: {fileID: 495403847230633867}
   - component: {fileID: 551381708267152428}
   m_Layer: 6
   m_Name: military_barrier_(map)
@@ -168,24 +167,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &495403847230633867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954606759074593157}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6048be48ed227cb4190985e4024fd0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::remove_obstacle
-  ashesEffect: {fileID: 5516911165926692714, guid: 0a7fb34690d3c4449ac0a7cf12da6e1b, type: 3}
-  boxCollider: {fileID: 5315467116289772985}
-  ashesSize: {x: 0.3, y: 0.6}
-  particleCounts: 25
-  bulletFragments: {fileID: 8997741667007924997, guid: 8f900fe5369a5c14795773452f953e39, type: 3}
-  bulletFragmentColor: {r: 0.49056602, g: 0.43999168, b: 0.15966536, a: 0.54509807}
 --- !u!114 &551381708267152428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,3 +182,5 @@ MonoBehaviour:
   boxCollider: {fileID: 5315467116289772985}
   bulletFragments: {fileID: 8997741667007924997, guid: 8f900fe5369a5c14795773452f953e39, type: 3}
   bulletFragmentColor: {r: 0.49019608, g: 0.4392157, b: 0.16078432, a: 0.54509807}
+  impactSound: 2
+  impactVolumn: 0.05

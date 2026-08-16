@@ -6,6 +6,8 @@ public class obstacle_map : MonoBehaviour
     [SerializeField] public BoxCollider2D boxCollider;
     [SerializeField] private ParticleSystem bulletFragments;
     [SerializeField] private Color bulletFragmentColor;
+    [SerializeField] private soundType impactSound;
+    [SerializeField] private float impactVolumn;
 
 
 
@@ -18,7 +20,7 @@ public class obstacle_map : MonoBehaviour
                 ParticleSystem fragment = Instantiate(bulletFragments, other.gameObject.GetComponent<Transform>().position, Quaternion.identity);
                 var main = fragment.main;
                 main.startColor = new ParticleSystem.MinMaxGradient(bulletFragmentColor);
-                game_manager.instance.soundsManager.playSFX(soundType.SAND_IMPACT, 0.05f);
+                game_manager.instance.soundsManager.playSFX(impactSound, impactVolumn);
             }
             Destroy(other.gameObject);
         }
