@@ -1,20 +1,24 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class obstacles_manager : MonoBehaviour
 {
-    public bool destroyable = false;
-    public void enableDestroy()
-    {
-        destroyable = true;
-    }
-    public void disableDestroy()
+    [Header("Destroy object toggling button")]
+    [SerializeField] private bool destroyable = false; 
+    [SerializeField] private Image destroyObjectButton;
+    [SerializeField] private Color disabledColor, enabledColor;
+
+    public void disableDestroyMode()
     {
         destroyable = false;
+        destroyObjectButton.color = destroyable ? enabledColor : disabledColor;
     }
+
     public void toggleDestoryMode()
     {
         destroyable = !destroyable;
+        destroyObjectButton.color = destroyable ? enabledColor : disabledColor;
     }
 
     void Update()

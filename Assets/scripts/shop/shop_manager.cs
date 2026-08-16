@@ -7,6 +7,8 @@ public class shop_manager : MonoBehaviour
     [SerializeField] private Animator shopAnimation;
     [SerializeField] public int budget = 0;
     [SerializeField] private Text[] budgetDisplay;
+    [SerializeField] private Image shopButton;
+    [SerializeField] private Image destroyObjectButton;
     private WaitForSeconds budgetUpdatingTime = new WaitForSeconds(0.01f);
 
 
@@ -80,7 +82,10 @@ public class shop_manager : MonoBehaviour
     {
         game_manager.instance.playerControlManager.controlable = false;
         shopAnimation.SetTrigger("openShop");
+        shopButton.raycastTarget = false;
+        destroyObjectButton.raycastTarget = false;
         game_manager.instance.prototypeManager.disablePrototype();
+        game_manager.instance.obstacleManager.disableDestroyMode();
     }
 
 
@@ -89,5 +94,7 @@ public class shop_manager : MonoBehaviour
     {
         game_manager.instance.playerControlManager.controlable = true;
         shopAnimation.SetTrigger("closeShop");
+        shopButton.raycastTarget = true;
+        destroyObjectButton.raycastTarget = true;
     }
 }

@@ -11,6 +11,7 @@ public enum soundType
     EMPTY_SHOT,
     RELOAD,
     HURT,
+    TICK,
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
