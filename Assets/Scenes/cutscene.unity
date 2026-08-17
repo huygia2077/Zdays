@@ -902,6 +902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcbe9128910f82b4c9f6f17e1566cbed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playButtonSFX
+  SFX: 6
+  vol: 0.2
 --- !u!1 &366656134
 GameObject:
   m_ObjectHideFlags: 0

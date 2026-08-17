@@ -1,0 +1,63 @@
+{
+    "savedBuildings": [
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 2.671415328979492,
+                "y": 0.10099279880523682
+            },
+            "rotation": 0.0,
+            "damagedStat": 0.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 2.4165873527526857,
+                "y": -0.9141826033592224
+            },
+            "rotation": 0.0,
+            "damagedStat": 0.0
+        },
+        {
+            "prefabID": "military_barrier",
+            "position": {
+                "x": 1.438788652420044,
+                "y": -1.135014533996582
+            },
+            "rotation": 0.0,
+            "damagedStat": 0.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -1.7216200828552247,
+                "y": -1.9428696632385255
+            },
+            "rotation": 108.29237365722656,
+            "damagedStat": 0.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -2.5427327156066896,
+                "y": -1.4898420572280884
+            },
+            "rotation": 268.2620849609375,
+            "damagedStat": 0.0
+        },
+        {
+            "prefabID": "wooden_barrier",
+            "position": {
+                "x": -2.576709747314453,
+                "y": -0.759334921836853
+            },
+            "rotation": 326.59722900390627,
+            "damagedStat": 0.0
+        }
+    ],
+    "savedGameStats": {
+        "playerHealth": 10.0,
+        "survivedDays": 1,
+        "zombieKilled": 8
+    }
+}

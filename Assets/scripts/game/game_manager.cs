@@ -50,12 +50,16 @@ public class game_manager : MonoBehaviour
     [SerializeField] private HashSet<GameObject> activeBuilds;
 
 
+    [SerializeField] private Animator togglingButtons;
+
+
     void Start()
     {
         instance = this;
         activeBuilds = new HashSet<GameObject>();
         savedManager.loadSavedGame();
         updateDays();
+        togglingButtons.SetTrigger("openButtons");
     }
 
 
@@ -95,6 +99,7 @@ public class game_manager : MonoBehaviour
             savedManager.saveGame(activeBuilds);
             survivedDays++;
             daysAndRewards.SetTrigger("startNewDay");
+            togglingButtons.SetTrigger("closeButtons");
             startingNewWave = false;
         }
     }   
@@ -111,6 +116,6 @@ public class game_manager : MonoBehaviour
         rewardAnimation.SetTrigger("addRewards");
         reward.text = "+" + rewards.ToString() + "$";
         shopManager.addMoney(rewards);
-
+        togglingButtons.SetTrigger("openButtons");
     }
 }

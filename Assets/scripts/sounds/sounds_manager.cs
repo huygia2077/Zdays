@@ -12,6 +12,7 @@ public enum soundType
     RELOAD,
     HURT,
     TICK,
+    PAPER,
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]

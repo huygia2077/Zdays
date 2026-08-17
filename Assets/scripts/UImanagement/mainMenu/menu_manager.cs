@@ -25,8 +25,13 @@ public class menu_manager : MonoBehaviour
 
     public void quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        // Quits the compiled .exe
         Application.Quit();
+
+        // Only runs when playing inside the Unity Editor
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 
 

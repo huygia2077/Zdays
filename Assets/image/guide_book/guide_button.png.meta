@@ -158,12 +158,12 @@ TextureImporter:
       name: guide_button_0
       rect:
         serializedVersion: 2
-        x: 58
-        y: 568
-        width: 6
-        height: 6
+        x: 0
+        y: 0
+        width: 1648
+        height: 1216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -176,33 +176,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: guide_button_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 32
-        width: 1494
-        height: 1134
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e648c0f090ede93b0800000000000000
-      internalID: -5503717564111616914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 607b1ea7e109fb64e8e705648797ee50
     internalID: 0
     vertices: []
     indices: 
